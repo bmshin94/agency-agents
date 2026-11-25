@@ -550,3 +550,590 @@ CRM 잡무가 아니라 실력으로 파이프라인을 매출로 바꿉니다.
 | 🔍 [Research Synthesist](research/research-synthesist.md) | 문헌 검토, 출처 평가, 인용 추적, 근거 종합 | 흩어진 자료 더미를 근거가 뒷받침하는 바에 대한 구조적이고 정직하게 가중된 지도로 바꾸기 |
 
 ---
+## 🎯 실제 활용 사례
+
+### 시나리오 1: 스타트업 MVP 만들기
+
+**팀 구성**:
+1. 🎨 **Frontend Developer** - React 앱 구축
+2. 🏗️ **Backend Architect** - API와 데이터베이스 설계
+3. 🚀 **Growth Hacker** - 유저 확보 계획
+4. ⚡ **Rapid Prototyper** - 빠른 반복 사이클
+5. 🔍 **Reality Checker** - 출시 전 품질 확보
+
+**결과**: 모든 단계에 전문성이 붙어 더 빠르게 출시합니다.
+
+---
+
+### 시나리오 2: 마케팅 캠페인 런치
+
+**팀 구성**:
+1. 📝 **Content Creator** - 캠페인 콘텐츠 개발
+2. 🐦 **Twitter Engager** - 트위터 전략과 실행
+3. 📸 **Instagram Curator** - 비주얼 콘텐츠와 스토리
+4. 🤝 **Reddit Community Builder** - 진정성 있는 커뮤니티 참여
+5. 📊 **Analytics Reporter** - 성과 추적과 최적화
+
+**결과**: 플랫폼별 전문성을 갖춘 멀티채널 통합 캠페인이 완성됩니다.
+
+---
+
+### 시나리오 3: 엔터프라이즈 기능 개발
+
+**팀 구성**:
+1. 👔 **Senior Project Manager** - 범위 설정과 태스크 기획
+2. 💎 **Senior Developer** - 복잡한 구현
+3. 🎨 **UI Designer** - 디자인 시스템과 컴포넌트
+4. 🧪 **Experiment Tracker** - A/B 테스트 기획
+5. 📸 **Evidence Collector** - 품질 검증
+6. 🔍 **Reality Checker** - 프로덕션 준비도 확인
+
+**결과**: 품질 게이트와 문서를 갖춘 엔터프라이즈급 딜리버리가 나옵니다.
+
+---
+
+### 시나리오 4: 유료 미디어 계정 인수
+
+**팀 구성**:
+
+1. 📋 **Paid Media Auditor** - 종합적인 계정 진단
+2. 📡 **Tracking & Measurement Specialist** - 전환 추적 정확도 검증
+3. 💰 **PPC Campaign Strategist** - 계정 구조 재설계
+4. 🔍 **Search Query Analyst** - 검색어에서 낭비되는 지출 정리
+5. ✍️ **Ad Creative Strategist** - 모든 광고 카피와 확장 소재 교체
+6. 📊 **Analytics Reporter** (서포트 디비전) - 리포팅 대시보드 구축
+
+**결과**: 추적 검증, 낭비 제거, 구조 최적화, 크리에이티브 리프레시까지 — 첫 30일 안에 체계적인 계정 인수를 끝냅니다.
+
+---
+
+### 시나리오 5: 에이전시 전체가 참여하는 제품 디스커버리
+
+**팀 구성**: 8개 디비전이 하나의 미션을 두고 동시에 움직입니다.
+
+**[Nexus Spatial Discovery Exercise](examples/nexus-spatial-discovery.md)**를 보세요. 8명의 에이전트(Product Trend Researcher, Backend Architect, Brand Guardian, Growth Hacker, Support Responder, UX Researcher, Project Shepherd, XR Interface Architect)를 동시에 투입해 소프트웨어 기회를 평가하고, 시장 검증부터 기술 아키텍처, 브랜드 전략, 고 투 마켓, 서포트 체계, UX 리서치, 프로젝트 실행, 공간 UI 디자인까지 아우르는 통합 제품 계획을 만든 완전한 예시입니다.
+
+**결과**: 단 한 세션에서 직능을 넘나드는 종합 제품 설계도가 나옵니다. [더 많은 예시](examples/).
+
+---
+
+### 시나리오 6: 스마트 캠퍼스 디지털 트윈
+
+**팀 구성**:
+
+1. 🧠 **Technical Consultant** - 디지털 트윈 전략 정의: 건물은 BIM, 캠퍼스는 GIS, 실시간은 IoT
+2. 🏗️ **BIM/GIS Specialist** - Revit 건물 모델을 GIS 씬 레이어로 변환, 실내 평면도 설계
+3. 🛸 **Drone/Reality Mapping** - 캠퍼스 비행 촬영, 맥락 제공용 정사영상과 3D 메시 생성
+4. 🌐 **Web GIS Developer** - MapLibre, 건물 레이어, 강의실 찾기 기능을 갖춘 캠퍼스 대시보드 구축
+5. 🏔️ **3D & Scene Developer** - 지형, 건물, 플라이오버 투어가 담긴 몰입형 3D 씬 제작
+6. 🤖 **GeoAI/ML Engineer** - 드론 영상에서 건물 외곽선과 수목 캐노피 추출
+7. ✅ **GIS QA Engineer** - 데이터 정확도 검증, 토폴로지 점검, CRS 일관성 확인
+
+**결과**: BIM의 디테일, 드론 리얼리티 캡처, 3D 시각화, 웹 접근성을 결합한 캠퍼스 디지털 트윈을 전문가들이 하나의 파이프라인으로 조율해 완성합니다.
+
+---
+
+## 🤝 기여하기
+
+기여를 환영합니다! 이렇게 도울 수 있습니다.
+
+### 새 에이전트 추가
+
+1. 리포지토리를 포크합니다
+2. 적합한 카테고리에 새 에이전트 파일을 만듭니다
+3. 에이전트 템플릿 구조를 따릅니다:
+   - name, description, color가 담긴 프론트매터
+   - Identity & Memory 섹션
+   - Core Mission
+   - Critical Rules (도메인별)
+   - 예시가 포함된 Technical Deliverables
+   - Workflow Process
+   - Success Metrics
+4. 에이전트와 함께 PR을 제출합니다
+
+### 기존 에이전트 개선
+
+- 실제 사례 추가
+- 코드 샘플 보강
+- 성공 지표 업데이트
+- 워크플로 개선
+
+### 성공 사례 공유
+
+이 에이전트들을 성공적으로 활용하셨나요? [Discussions](https://github.com/msitarzewski/agency-agents/discussions)에서 이야기를 들려주세요!
+
+---
+
+## 📖 에이전트 설계 철학
+
+각 에이전트는 다음을 염두에 두고 설계했습니다.
+
+1. **🎭 강한 개성**: 일반적인 템플릿이 아니라, 진짜 캐릭터와 목소리
+2. **📋 명확한 산출물**: 막연한 조언이 아니라 구체적인 결과물
+3. **✅ 성공 지표**: 측정 가능한 성과와 품질 기준
+4. **🔄 검증된 워크플로**: 실제로 통하는 단계별 프로세스
+5. **💡 학습 메모리**: 패턴 인식과 지속적인 개선
+
+---
+
+## 🎁 무엇이 특별한가요?
+
+### 일반적인 AI 프롬프트와 달리:
+- ❌ "개발자처럼 행동해" 같은 뻔한 프롬프트
+- ✅ 개성과 프로세스를 갖춘 깊은 전문성
+
+### 프롬프트 라이브러리와 달리:
+- ❌ 일회성 프롬프트 모음
+- ✅ 워크플로와 산출물을 갖춘 종합적인 에이전트 시스템
+
+### AI 도구와 달리:
+- ❌ 커스터마이징할 수 없는 블랙박스 도구
+- ✅ 투명하고, 포크할 수 있고, 변형할 수 있는 에이전트 페르소나
+
+---
+
+## 🎨 에이전트 개성 하이라이트
+
+> "저는 코드를 그냥 테스트하지 않습니다. 기본적으로 3~5개의 문제를 찾아내고, 모든 것에 시각적 증거를 요구합니다."
+>
+> -- **Evidence Collector** (테스팅 디비전)
+
+> "당신은 레딧에서 마케팅을 하는 게 아닙니다. 마침 브랜드를 대표하게 된, 커뮤니티가 소중히 여기는 구성원이 되는 겁니다."
+>
+> -- **Reddit Community Builder** (마케팅 디비전)
+
+> "모든 장난기 있는 요소는 기능적이거나 정서적인 목적을 가져야 합니다. 주의를 흐트러뜨리지 않고 더해 주는 즐거움을 디자인하세요."
+>
+> -- **Whimsy Injector** (디자인 디비전)
+
+> "작업 완료 불안을 40% 줄여 주는 축하 애니메이션을 하나 넣어 볼게요"
+>
+> -- **Whimsy Injector** (UX 리뷰 중)
+
+---
+
+## 📊 통계
+
+- 🎭 디비전 전체에 걸친 **230개 이상의 전문 에이전트**
+- 📝 개성, 프로세스, 코드 예시 **1만 줄 이상**
+- ⏱️ 실제 사용에서 나온 **수개월의 반복 개선**
+- 🌟 프로덕션 환경에서 **실전 검증**
+- 💬 레딧 공개 후 **첫 12시간 동안 50건 이상의 요청**
+
+---
+
+## 🔌 멀티 도구 통합
+
+The Agency는 Claude Code에서 기본으로 동작하며, 변환·설치 스크립트를 함께 제공해 주요 에이전틱 코딩 도구 전반에서 같은 에이전트를 쓸 수 있게 해 줍니다.
+
+### 지원 도구
+
+- **[Claude Code](https://claude.ai/code)** — 네이티브 `.md` 에이전트, 변환 불필요 → `~/.claude/agents/`
+- **[GitHub Copilot](https://github.com/copilot)** — 네이티브 `.md` 에이전트, 변환 불필요 → `~/.github/agents/` + `~/.copilot/agents/`
+- **[Antigravity](https://github.com/google-gemini/antigravity)** — 에이전트별 `SKILL.md` → `~/.gemini/config/skills/`
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** -- `.md` 에이전트 파일 -> `~/.gemini/agents/`
+- **[OpenCode](https://opencode.ai)** — `.md` 에이전트 파일 → `.opencode/agents/`
+- **[Cursor](https://cursor.sh)** — `.mdc` 룰 파일 → `.cursor/rules/`
+- **[Aider](https://aider.chat)** — 단일 `CONVENTIONS.md` → `./CONVENTIONS.md`
+- **[Windsurf](https://codeium.com/windsurf)** — 단일 `.windsurfrules` → `./.windsurfrules`
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — 에이전트별 `SOUL.md` + `AGENTS.md` + `IDENTITY.md`
+- **[Qwen Code](https://github.com/QwenLM/qwen-code)** — `.md` SubAgent 파일 → `~/.qwen/agents/`
+- **[Kimi Code](https://github.com/MoonshotAI/kimi-cli)** — YAML 에이전트 스펙 → `~/.config/kimi/agents/`
+- **[Codex](https://developers.openai.com/codex/overview)** — TOML 커스텀 에이전트 → `~/.codex/agents/`
+- **Osaurus** -- `SKILL.md` 스킬 -> `~/.osaurus/skills/`
+- **[Hermes](integrations/hermes/README.md)** -- 지연 라우터 플러그인 -> `~/.hermes/plugins/`
+
+---
+
+### ⚡ 빠른 설치
+
+**1단계 -- 통합 파일 생성:**
+```bash
+./scripts/convert.sh
+# 더 빠르게 (병렬 처리, 출력 순서는 달라질 수 있음): ./scripts/convert.sh --parallel
+```
+
+**2단계 -- 설치 (대화형, 설치된 도구를 자동 감지):**
+```bash
+./scripts/install.sh
+# 더 빠르게 (병렬 처리, 출력 순서는 달라질 수 있음): ./scripts/install.sh --no-interactive --parallel
+```
+
+설치 스크립트가 시스템에 설치된 도구를 탐색해 체크박스 UI를 보여 주고, 설치할 항목을 정확히 고르게 해 줍니다.
+
+```
+  +------------------------------------------------+
+  |   The Agency -- Tool Installer                 |
+  +------------------------------------------------+
+
+  System scan: [*] = detected on this machine
+
+  [x]  1)  [*]  Claude Code     (claude.ai/code)
+  [x]  2)  [*]  Copilot         (~/.github + ~/.copilot)
+  [x]  3)  [*]  Antigravity     (~/.gemini/antigravity)
+  [ ]  4)  [ ]  Gemini CLI      (~/.gemini/agents)
+  [ ]  5)  [ ]  OpenCode        (opencode.ai)
+  [ ]  6)  [ ]  OpenClaw        (~/.openclaw/agency-agents)
+  [x]  7)  [*]  Cursor          (.cursor/rules)
+  [ ]  8)  [ ]  Aider           (CONVENTIONS.md)
+  [ ]  9)  [ ]  Windsurf        (.windsurfrules)
+  [ ] 10)  [ ]  Qwen Code       (~/.qwen/agents)
+  [ ] 11)  [ ]  Kimi Code       (~/.config/kimi/agents)
+  [ ] 12)  [ ]  Codex           (~/.codex/agents)
+  [ ] 13)  [ ]  Osaurus         (~/.osaurus/skills)
+  [ ] 14)  [ ]  Hermes          (~/.hermes/plugins)
+
+  [1-14] toggle   [a] all   [n] none   [d] detected
+  [Enter] install   [q] quit
+```
+
+**또는 특정 도구를 직접 설치:**
+```bash
+./scripts/install.sh --tool cursor
+./scripts/install.sh --tool opencode
+./scripts/install.sh --tool openclaw
+./scripts/install.sh --tool antigravity
+./scripts/install.sh --tool codex
+./scripts/install.sh --tool osaurus
+./scripts/install.sh --tool hermes
+```
+
+**비대화형 (CI/스크립트):**
+```bash
+./scripts/install.sh --no-interactive --tool all
+```
+
+**더 빠른 실행 (병렬)** — 멀티코어 머신에서는 `--parallel`을 써서 도구별로 병렬 처리하세요. 도구 간 출력 순서는 비결정적입니다. 대화형과 비대화형 설치 모두에서 동작합니다. 예: `./scripts/install.sh --interactive --parallel`(도구를 고른 뒤 병렬 설치) 또는 `./scripts/install.sh --no-interactive --parallel`. 작업 수는 기본적으로 `nproc`(Linux), `sysctl -n hw.ncpu`(macOS), 또는 4를 따르며, `--jobs N`으로 덮어쓸 수 있습니다.
+
+```bash
+./scripts/convert.sh --parallel                    # 모든 도구를 병렬로 변환
+./scripts/convert.sh --parallel --jobs 8           # 병렬 작업 수 제한
+./scripts/install.sh --no-interactive --parallel   # 감지된 모든 도구를 병렬로 설치
+./scripts/install.sh --interactive --parallel      # 도구를 고른 뒤 병렬로 설치
+./scripts/install.sh --no-interactive --parallel --jobs 4
+```
+
+---
+
+### 도구별 사용법
+
+<details>
+<summary><strong>Claude Code</strong></summary>
+
+에이전트가 리포지토리에서 `~/.claude/agents/`로 그대로 복사됩니다 — 변환이 필요 없습니다.
+
+```bash
+./scripts/install.sh --tool claude-code
+```
+
+그다음 Claude Code에서 활성화합니다:
+```
+Use the Frontend Developer agent to review this component.
+```
+
+자세한 내용은 [integrations/claude-code/README.md](integrations/claude-code/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>GitHub Copilot</strong></summary>
+
+에이전트가 리포지토리에서 `~/.github/agents/`와 `~/.copilot/agents/`로 그대로 복사됩니다 — 변환이 필요 없습니다.
+
+```bash
+./scripts/install.sh --tool copilot
+```
+
+그다음 GitHub Copilot에서 활성화합니다:
+```
+Use the Frontend Developer agent to review this component.
+```
+
+자세한 내용은 [integrations/github-copilot/README.md](integrations/github-copilot/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>Antigravity (Gemini)</strong></summary>
+
+각 에이전트가 `~/.gemini/config/skills/agency-<slug>/`의 스킬이 됩니다.
+
+```bash
+./scripts/install.sh --tool antigravity
+```
+
+Antigravity가 적용된 Gemini에서 활성화합니다:
+```
+@agency-frontend-developer review this React component
+```
+
+자세한 내용은 [integrations/antigravity/README.md](integrations/antigravity/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>Gemini CLI</strong></summary>
+
+Gemini CLI 서브에이전트로 설치됩니다.
+새로 클론한 경우, 설치 스크립트를 실행하기 전에 Gemini 에이전트 파일을 먼저 생성하세요.
+
+```bash
+./scripts/convert.sh --tool gemini-cli
+./scripts/install.sh --tool gemini-cli
+```
+
+자세한 내용은 [integrations/gemini-cli/README.md](integrations/gemini-cli/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>OpenCode</strong></summary>
+
+에이전트가 프로젝트 루트의 `.opencode/agents/`에 설치됩니다(프로젝트 범위).
+
+```bash
+cd /your/project
+/path/to/agency-agents/scripts/install.sh --tool opencode
+```
+
+또는 전역으로 설치:
+```bash
+mkdir -p ~/.config/opencode/agents
+cp integrations/opencode/agents/*.md ~/.config/opencode/agents/
+```
+
+OpenCode에서 활성화합니다:
+```
+@backend-architect design this API.
+```
+
+자세한 내용은 [integrations/opencode/README.md](integrations/opencode/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>Cursor</strong></summary>
+
+각 에이전트가 프로젝트의 `.cursor/rules/`에 `.mdc` 룰 파일로 만들어집니다.
+
+```bash
+cd /your/project
+/path/to/agency-agents/scripts/install.sh --tool cursor
+```
+
+Cursor가 프로젝트에서 룰을 감지하면 자동으로 적용됩니다. 명시적으로 참조하려면:
+```
+Use the @security-engineer rules to review this code.
+```
+
+자세한 내용은 [integrations/cursor/README.md](integrations/cursor/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>Aider</strong></summary>
+
+모든 에이전트가 하나의 `CONVENTIONS.md` 파일로 컴파일되며, Aider가 이를 자동으로 읽습니다.
+
+```bash
+cd /your/project
+/path/to/agency-agents/scripts/install.sh --tool aider
+```
+
+그다음 Aider 세션에서 에이전트를 참조합니다:
+```
+Use the Frontend Developer agent to refactor this component.
+```
+
+자세한 내용은 [integrations/aider/README.md](integrations/aider/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>Windsurf</strong></summary>
+
+모든 에이전트가 프로젝트 루트의 `.windsurfrules`로 컴파일됩니다.
+
+```bash
+cd /your/project
+/path/to/agency-agents/scripts/install.sh --tool windsurf
+```
+
+Windsurf의 Cascade에서 에이전트를 참조합니다:
+```
+Use the Reality Checker agent to verify this is production ready.
+```
+
+자세한 내용은 [integrations/windsurf/README.md](integrations/windsurf/README.md)를 참고하세요.
+</details>
+
+<details>
+<summary><strong>OpenClaw</strong></summary>
+
+각 에이전트가 `~/.openclaw/agency-agents/` 안에서 `SOUL.md`, `AGENTS.md`, `IDENTITY.md`를 갖춘 워크스페이스가 됩니다.
+
+```bash
+./scripts/convert.sh --tool openclaw
+./scripts/install.sh --tool openclaw
+```
+
+`openclaw` CLI를 쓸 수 있는 환경이면 설치 스크립트가 각 워크스페이스를 자동으로 등록합니다.
+설치 후 `openclaw gateway restart`를 실행해 새 에이전트를 활성화하세요.
+
+자세한 내용은 [integrations/openclaw/README.md](integrations/openclaw/README.md)를 참고하세요.
+
+</details>
+
+<details>
+<summary><strong>Qwen Code</strong></summary>
+
+SubAgent가 프로젝트 루트의 `.qwen/agents/`에 설치됩니다(프로젝트 범위).
+
+```bash
+# 변환 후 설치 (프로젝트 루트에서 실행)
+cd /your/project
+./scripts/convert.sh --tool qwen
+./scripts/install.sh --tool qwen
+```
+
+**Qwen Code에서 사용하기:**
+- 이름으로 참조: `Use the frontend-developer agent to review this component`
+- 또는 Qwen이 작업 맥락에 따라 자동으로 위임하게 두기
+- 대화형 모드에서 `/agents` 명령으로 관리
+
+> 📚 [Qwen SubAgents 문서](https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/)
+
+</details>
+
+<details>
+<summary><strong>Kimi Code</strong></summary>
+
+에이전트가 Kimi Code CLI 형식(YAML + 시스템 프롬프트)으로 변환되어 `~/.config/kimi/agents/`에 설치됩니다.
+
+```bash
+# 변환 후 설치
+./scripts/convert.sh --tool kimi
+./scripts/install.sh --tool kimi
+```
+
+**Kimi Code와 함께 사용하기:**
+```bash
+# 에이전트 사용
+kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml
+
+# 프로젝트 안에서
+kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml \
+     --work-dir /your/project \
+     "Review this React component"
+```
+
+자세한 내용은 [integrations/kimi/README.md](integrations/kimi/README.md)를 참고하세요.
+
+</details>
+
+<details>
+<summary><strong>Codex</strong></summary>
+
+각 에이전트가 Codex 커스텀 에이전트 TOML 파일로 변환되어 `~/.codex/agents/`에 설치됩니다.
+
+```bash
+./scripts/convert.sh --tool codex
+./scripts/install.sh --tool codex
+```
+
+그다음 Codex에서 커스텀 에이전트를 이름으로 참조합니다:
+```
+Use the Frontend Developer agent to review this component.
+```
+
+자세한 내용은 [integrations/codex/README.md](integrations/codex/README.md)를 참고하세요.
+</details>
+
+---
+
+### 변경 후 다시 생성하기
+
+새 에이전트를 추가하거나 기존 에이전트를 수정했다면, 모든 통합 파일을 다시 생성하세요.
+
+```bash
+./scripts/convert.sh                    # 전체 다시 생성 (순차)
+./scripts/convert.sh --parallel         # 전체 병렬로 다시 생성 (더 빠름)
+./scripts/convert.sh --tool codex       # 한 도구만 다시 생성
+./scripts/convert.sh --tool cursor      # 한 도구만 다시 생성
+```
+
+---
+
+## 🗺️ 로드맵
+
+- [ ] 인터랙티브 에이전트 선택 웹 도구
+- [x] 멀티 에이전트 워크플로 예시 -- [examples/](examples/) 참고
+- [x] 멀티 도구 통합 스크립트 (Claude Code, GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Qwen Code, Kimi Code, Codex, Osaurus, Hermes)
+- [ ] 에이전트 설계 영상 튜토리얼
+- [ ] 커뮤니티 에이전트 마켓플레이스
+- [ ] 프로젝트 매칭용 에이전트 "성격 테스트"
+- [ ] "이번 주의 에이전트" 쇼케이스 시리즈
+
+---
+
+## 🌐 커뮤니티 번역 및 현지화
+
+커뮤니티가 관리하는 번역과 지역별 적응판입니다. 각각 독립적으로 관리되므로, 포함 범위와 버전 호환성은 해당 리포지토리를 확인하세요.
+
+| 언어 | 관리자 | 링크 | 비고 |
+|----------|-----------|------|-------|
+| 🇨🇳 简体中文 (zh-CN) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) | 번역된 에이전트 141개 + 중국 시장용 오리지널 46개 |
+| 🇨🇳 简体中文 (zh-CN) | [@dsclca12](https://github.com/dsclca12) | [agent-teams](https://github.com/dsclca12/agent-teams) | 빌리빌리, 위챗, 샤오홍슈 현지화가 포함된 독립 번역 |
+| 🇧🇷 Português brasileiro (pt-BR) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-pt-BR](https://github.com/jnMetaCode/agency-agents-pt-BR) | 업스트림 에이전트 184개 번역 완료. 브라질 시장용 PR 환영 |
+| 🇷🇺 Русский (ru) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ru](https://github.com/jnMetaCode/agency-agents-ru) | 업스트림 에이전트 184개 번역 완료. 러시아 시장용 PR 환영 |
+| 🇮🇩 Bahasa Indonesia (id) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-id](https://github.com/jnMetaCode/agency-agents-id) | 업스트림 에이전트 184개 번역 완료. 인도네시아 시장용 PR 환영 |
+| 🇸🇦 العربية (ar) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ar](https://github.com/jnMetaCode/agency-agents-ar) | 업스트림 에이전트 184개 번역 완료. 아랍어권 시장용 PR 환영 |
+| 🇰🇷 한국어 (ko) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ko](https://github.com/jnMetaCode/agency-agents-ko) | 업스트림 에이전트 184개 전체 번역 완료. 한국 특화 PR 환영 |
+| 🇯🇵 日本語 (ja-JP) | [@sscodeai](https://github.com/sscodeai) | [agency-agents-ja](https://github.com/sscodeai/agency-agents-ja) | 일본 현지화 에이전트 281개 + 일본 시장용 오리지널 97개 + 워크플로 27개 |
+| 🇻🇳 Tiếng Việt (vi-VN) | [@rodonguyen](https://github.com/rodonguyen) | [agency-agents](https://github.com/rodonguyen/agency-agents) | README, 빠른 시작, 자주 쓰는 문서를 중심으로 한 베트남어 초기 현지화 |
+
+번역을 추가하고 싶으신가요? 이슈를 열어 주시면 여기에 링크해 드립니다.
+
+---
+
+## 🔗 관련 자료
+
+- [awesome-openclaw-agents](https://github.com/mergisi/awesome-openclaw-agents) — 커뮤니티가 관리하는 OpenClaw 에이전트 모음집 (이 리포지토리에서 파생)
+
+---
+
+## 📜 라이선스
+
+MIT 라이선스 - 상업적으로든 개인적으로든 자유롭게 사용하세요. 출처 표기는 환영하지만 필수는 아닙니다.
+
+---
+
+## 🙏 감사의 말
+
+AI 에이전트 전문화에 대한 레딧 스레드로 시작한 것이 지금은 꽤 놀라운 것이 되었습니다. **모든 디비전에 걸친 230개 이상의 에이전트**, 그리고 세계 곳곳의 기여자들이 이루는 커뮤니티가 함께하고 있습니다. 이 리포지토리의 모든 에이전트는 누군가 충분히 마음을 써서 쓰고, 테스트하고, 공유했기에 존재합니다.
+
+PR을 열고, 이슈를 남기고, Discussion을 시작하고, 또는 그저 에이전트를 써 보고 무엇이 잘 통했는지 알려 주신 모든 분께 감사합니다. The Agency가 계속 좋아지는 건 여러분 덕분입니다.
+
+---
+
+## 💬 커뮤니티
+
+- **GitHub Discussions**: [성공 사례 공유하기](https://github.com/msitarzewski/agency-agents/discussions)
+- **Issues**: [버그 신고 또는 기능 요청](https://github.com/msitarzewski/agency-agents/issues)
+- **Reddit**: r/ClaudeAI에서 대화에 참여하세요
+- **Twitter/X**: #TheAgency로 공유해 주세요
+
+---
+
+## 🚀 시작하기
+
+1. 위 에이전트들을 **둘러보고** 필요에 맞는 전문가를 찾으세요
+2. Claude Code와 연동하려면 에이전트를 `~/.claude/agents/`로 **복사**하세요
+3. Claude와의 대화에서 에이전트를 참조해 **활성화**하세요
+4. 에이전트의 개성과 워크플로를 필요에 맞게 **커스터마이징**하세요
+5. 결과를 **공유**하고 커뮤니티에 기여해 주세요
+
+---
+
+<div align="center">
+
+**🎭 The Agency: 당신의 AI 드림팀이 기다립니다 🎭**
+
+[⭐ 이 리포지토리에 스타 주기](https://github.com/msitarzewski/agency-agents) • [🍴 포크하기](https://github.com/msitarzewski/agency-agents/fork) • [🐛 이슈 신고하기](https://github.com/msitarzewski/agency-agents/issues) • [❤️ 스폰서하기](https://github.com/sponsors/msitarzewski)
+
+커뮤니티가 커뮤니티를 위해 ❤️를 담아 만들었습니다
+
+</div>

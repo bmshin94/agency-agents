@@ -697,3 +697,414 @@ NEXUS에서 가장 빈번하게 일어나는 핸드오프 관계입니다:
 - **일정 영향**: [How this affects the overall schedule]
 - **품질 영향**: [감수해야 할 품질 타협]
 ```
+
+---
+
+## 12. 품질 게이트
+
+### 12.1 게이트 요약
+
+| 단계 | 게이트 이름 | 게이트 키퍼 | 통과 기준 |
+|-------|-----------|-------------|---------------|
+| 0 → 1 | 디스커버리 게이트 | Executive Summary Generator | 시장 검증, 사용자 니즈 확인, 규제 경로 명확 |
+| 1 → 2 | 아키텍처 게이트 | Studio Producer + Reality Checker | 아키텍처 완비, 브랜드 정의, 예산 승인, 현실적인 스프린트 계획 |
+| 2 → 3 | 기반 게이트 | DevOps Automator + Evidence Collector | CI/CD 동작, 골격 앱 구동, 모니터링 활성화 |
+| 3 → 4 | 기능 게이트 | Agents Orchestrator | 모든 과업 QA 통과, 치명적 버그 없음, 성능 기준선 충족 |
+| 4 → 5 | 프로덕션 게이트 | Reality Checker (단독 권한) | 사용자 여정 완결, 기기 간 일관성, 보안 검증, 명세 준수 |
+| 5 → 6 | 출시 게이트 | Studio Producer + Analytics Reporter | 배포 성공, 시스템 안정, 그로스 채널 가동 |
+
+### 12.2 게이트 실패 처리
+
+```
+게이트가 실패하면:
+  ├── 게이트 키퍼가 구체적인 실패 리포트를 작성합니다
+  ├── Agents Orchestrator가 실패 항목을 담당 에이전트에게 배분합니다
+  ├── 실패 항목은 Dev↔QA 루프로 들어갑니다 (Phase 3 메커니즘)
+  ├── Studio Producer로 에스컬레이션하기 전까지 게이트 재시도는 최대 3회입니다
+  └── Studio Producer가 결정합니다: 수정, 범위 축소, 또는 리스크 감수 후 수용
+```
+
+---
+
+## 13. 리스크 관리
+
+### 13.1 리스크 범주와 담당자
+
+| 리스크 범주 | 주 담당 | 완화 담당 에이전트 | 에스컬레이션 경로 |
+|---------------|--------------|-------------------|-----------------|
+| 기술 부채 | Backend Architect | Workflow Optimizer | Senior Developer |
+| 보안 취약점 | Legal Compliance Checker | Infrastructure Maintainer | DevOps Automator |
+| 성능 저하 | Performance Benchmarker | Infrastructure Maintainer | Backend Architect |
+| 브랜드 비일관성 | Brand Guardian | UI Designer | Studio Producer |
+| 범위 확산 | Senior Project Manager | Sprint Prioritizer | Project Shepherd |
+| 예산 초과 | Finance Tracker | Studio Operations | Studio Producer |
+| 규제 미준수 | Legal Compliance Checker | Support Responder | Studio Producer |
+| 시장 변화 | Trend Researcher | Growth Hacker | Studio Producer |
+| 팀 병목 | Project Shepherd | Studio Operations | Studio Producer |
+| 품질 회귀 | Reality Checker | Evidence Collector | Agents Orchestrator |
+
+### 13.2 리스크 대응 매트릭스
+
+| 심각도 | 대응 시간 | 결정 권한 | 조치 |
+|----------|--------------|-------------------|--------|
+| **치명적** (P0) | 즉시 | Studio Producer | 전원 투입, 다른 작업 중단 |
+| **높음** (P1) | 4시간 이내 | Project Shepherd | 전담 에이전트 배정 |
+| **중간** (P2) | 24시간 이내 | Agents Orchestrator | 다음 스프린트 우선순위 |
+| **낮음** (P3) | 1주 이내 | Sprint Prioritizer | 백로그 항목 |
+
+---
+
+## 14. 성공 지표
+
+### 14.1 파이프라인 지표
+
+| 지표 | 목표 | 측정 에이전트 |
+|--------|--------|-------------------|
+| 단계 완료율 | 첫 시도에 95% | Agents Orchestrator |
+| 과업 1차 QA 통과율 | 70% 이상 | Evidence Collector |
+| 과업당 평균 재시도 | 1.5회 미만 | Agents Orchestrator |
+| 파이프라인 사이클 타임 | 스프린트 추정치 ±15% 이내 | Project Shepherd |
+| 품질 게이트 통과율 | 첫 시도에 80% 이상 | Reality Checker |
+
+### 14.2 제품 지표
+
+| 지표 | 목표 | 측정 에이전트 |
+|--------|--------|-------------------|
+| API 응답 시간 (P95) | 200ms 미만 | Performance Benchmarker |
+| 페이지 로드 시간 (LCP) | 2.5s 미만 | Performance Benchmarker |
+| 시스템 가동률 | 99.9% 초과 | Infrastructure Maintainer |
+| Lighthouse 점수 | 90 초과 (성능 + 접근성) | Frontend Developer |
+| 보안 취약점 | 치명적 0건 | Legal Compliance Checker |
+| 명세 준수 | 100% | Reality Checker |
+
+### 14.3 비즈니스 지표
+
+| 지표 | 목표 | 측정 에이전트 |
+|--------|--------|-------------------|
+| 사용자 유입 (전월 대비) | 20% 이상 성장 | Growth Hacker |
+| 활성화율 | 첫 주 60% 이상 | Analytics Reporter |
+| 리텐션 (7일 / 30일) | 40% / 20% | Analytics Reporter |
+| LTV:CAC 비율 | 3:1 초과 | Finance Tracker |
+| NPS 점수 | 50 초과 | Feedback Synthesizer |
+| 포트폴리오 ROI | 25% 초과 | Studio Producer |
+
+### 14.4 운영 지표
+
+| 지표 | 목표 | 측정 에이전트 |
+|--------|--------|-------------------|
+| 배포 빈도 | 하루 여러 번 | DevOps Automator |
+| 평균 복구 시간 | 30분 미만 | Infrastructure Maintainer |
+| 컴플라이언스 준수율 | 98% 이상 | Legal Compliance Checker |
+| 이해관계자 만족도 | 4.5/5 | Executive Summary Generator |
+| 프로세스 효율 향상 | 분기당 20% 이상 | Workflow Optimizer |
+
+---
+
+## 15. 퀵스타트 활성화 가이드
+
+### 15.1 NEXUS-Full 활성화 (엔터프라이즈)
+
+```bash
+# 1단계: NEXUS 파이프라인 초기화
+"[PROJECT NAME]에 대해 Agents Orchestrator를 NEXUS-Full 모드로 활성화합니다.
+ 프로젝트 명세: [path to spec file].
+ 모든 품질 게이트를 포함한 7단계 파이프라인 전체를 실행하세요."
+
+# Orchestrator가 하는 일:
+# 1. 프로젝트 명세를 읽습니다
+# 2. 디스커버리를 위해 Phase 0 에이전트를 활성화합니다
+# 3. 품질 게이트와 함께 모든 단계를 진행합니다
+# 4. Dev↔QA 루프를 자동으로 관리합니다
+# 5. 각 단계 경계에서 상태를 보고합니다
+```
+
+### 15.2 NEXUS-Sprint 활성화 (기능/MVP)
+
+```bash
+# 1단계: 스프린트 파이프라인 초기화
+"[FEATURE/MVP NAME]에 대해 Agents Orchestrator를 NEXUS-Sprint 모드로 활성화합니다.
+ 요구사항: [brief description or path to spec].
+ Phase 0은 생략합니다 (시장 검증 완료).
+ 아키텍처와 스프린트 계획이 있는 Phase 1부터 시작하세요."
+
+# 권장 에이전트 구성 (15~25):
+# PM: Senior Project Manager, Sprint Prioritizer, Project Shepherd
+# 디자인: UX Architect, UI Designer, Brand Guardian
+# 엔지니어링: Frontend Developer, Backend Architect, DevOps Automator
+# + AI Engineer 또는 Mobile App Builder (해당 시)
+# 테스팅: Evidence Collector, Reality Checker, API Tester, Performance Benchmarker
+# 지원: Analytics Reporter, Infrastructure Maintainer
+# 전문 분야: Agents Orchestrator
+```
+
+### 15.3 NEXUS-Micro 활성화 (특정 과업)
+
+```bash
+# 1단계: 에이전트 직접 활성화
+"[TASK DESCRIPTION]을 위해 [SPECIFIC AGENT]를 활성화합니다.
+ 컨텍스트: [relevant background].
+ 산출물: [specific output expected].
+ 품질 점검: 완료 시 Evidence Collector가 검증합니다."
+
+# 자주 쓰는 NEXUS-Micro 구성:
+#
+# 버그 수정:
+#   Backend Architect → API Tester → Evidence Collector
+#
+# 콘텐츠 캠페인:
+#   Content Creator → Social Media Strategist → Twitter Engager
+#   + Instagram Curator + Reddit Community Builder
+#
+# 성능 문제:
+#   Performance Benchmarker → Infrastructure Maintainer → DevOps Automator
+#
+# 컴플라이언스 감사:
+#   Legal Compliance Checker → Executive Summary Generator
+#
+# 시장 조사:
+#   Trend Researcher → Analytics Reporter → Executive Summary Generator
+#
+# UX 개선:
+#   UX Researcher → UX Architect → Frontend Developer → Evidence Collector
+```
+
+### 15.4 에이전트 활성화 프롬프트 템플릿
+
+#### Orchestrator용 (파이프라인 시작)
+```
+당신은 [PROJECT]의 NEXUS 파이프라인을 운영하는 Agents Orchestrator입니다.
+
+프로젝트 명세: [path]
+모드: [Full/Sprint/Micro]
+현재 단계: [Phase N]
+
+NEXUS 프로토콜을 실행하세요:
+1. 프로젝트 명세를 읽습니다
+2. NEXUS 전략에 따라 Phase [N] 에이전트를 활성화합니다
+3. NEXUS 핸드오프 템플릿으로 핸드오프를 관리합니다
+4. 단계를 넘기기 전에 품질 게이트를 반드시 통과시킵니다
+5. 모든 과업을 상태 보고와 함께 추적합니다
+6. 모든 구현 과업에 Dev↔QA 루프를 돌립니다
+7. 과업별로 3회 실패 후 에스컬레이션합니다
+
+보고 포맷: NEXUS 파이프라인 상태 리포트 (전략 문서의 템플릿 참조)
+```
+
+#### 개발 에이전트용 (과업 구현)
+```
+당신은 NEXUS 파이프라인에서 일하는 [AGENT NAME]입니다.
+
+단계: [Current Phase]
+과업: [Task ID and description from Sprint Prioritizer backlog]
+아키텍처 참조: [path to architecture doc]
+디자인 시스템: [path to CSS/design tokens]
+브랜드 가이드라인: [path to brand doc]
+
+다음을 따라 이 과업을 구현하세요:
+1. 아키텍처 명세를 정확히 지킵니다
+2. 디자인 시스템 토큰과 패턴을 사용합니다
+3. 시각적 일관성을 위해 브랜드 가이드라인을 따릅니다
+4. 접근성 표준을 지킵니다 (WCAG 2.1 AA)
+
+작업이 끝나면 Evidence Collector가 결과를 검토합니다.
+완료 기준: [specific criteria from task list]
+```
+
+#### QA 에이전트용 (과업 검증)
+```
+당신은 NEXUS 파이프라인에서 작업을 검증하는 [QA AGENT]입니다.
+
+단계: [Current Phase]
+과업: [Task ID and description]
+개발자: [Which agent implemented this]
+시도: 최대 3회 중 [N]회차
+
+다음을 기준으로 검증하세요:
+1. 과업 완료 기준: [specific criteria]
+2. 아키텍처 명세: [path]
+3. 브랜드 가이드라인: [path]
+4. 성능 요구사항: [specific thresholds]
+
+판정을 제시하세요: PASS 또는 FAIL
+FAIL이면: 구체적인 문제, 증거, 수정 지침을 포함하세요
+NEXUS QA 피드백 루프 프로토콜 포맷을 사용하세요
+```
+
+---
+
+## 부록 A: 부문별 빠른 참조
+
+### 엔지니어링 부문 — "제대로 만든다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Frontend Developer | React/Vue/Angular, Core Web Vitals, 접근성 | 모든 UI 구현 과업 |
+| Backend Architect | 확장 가능한 시스템, 데이터베이스 설계, API 아키텍처 | 서버 사이드 아키텍처 또는 API 작업 |
+| Mobile App Builder | iOS/Android, React Native, Flutter | 모바일 애플리케이션 개발 |
+| AI Engineer | ML 모델, LLM, RAG 시스템, 데이터 파이프라인 | 모든 AI/ML 기능 |
+| DevOps Automator | CI/CD, IaC, Kubernetes, 모니터링 | 인프라 또는 배포 작업 |
+| Rapid Prototyper | Next.js, Supabase, 3일 MVP | 빠른 검증 또는 개념 증명 |
+| Senior Developer | Laravel/Livewire, 프리미엄 구현 | 복잡하거나 프리미엄한 기능 작업 |
+
+### 디자인 부문 — "아름답게 만든다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| UI Designer | 비주얼 디자인 시스템, 컴포넌트 라이브러리 | 인터페이스 디자인 또는 컴포넌트 제작 |
+| UX Researcher | 사용자 테스트, 행동 분석, 퍼소나 | 사용자 리서치 또는 사용성 테스트 |
+| UX Architect | CSS 시스템, 레이아웃 프레임워크, 기술적 UX | 기술적 기반 또는 아키텍처 |
+| Brand Guardian | 브랜드 아이덴티티, 일관성, 포지셔닝 | 브랜드 전략 또는 일관성 감사 |
+| Visual Storyteller | 비주얼 내러티브, 멀티미디어 콘텐츠 | 비주얼 콘텐츠 또는 스토리텔링 |
+| Whimsy Injector | 마이크로 인터랙션, 즐거움, 개성 | UX에 재미와 개성을 더할 때 |
+| Image Prompt Engineer | AI 이미지 생성 프롬프트, 사진 | AI 도구용 사진 프롬프트 제작 |
+
+### 마케팅 부문 — "빠르게 키운다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Growth Hacker | 바이럴 루프, 퍼널 최적화, 실험 | 사용자 유입 또는 그로스 전략 |
+| Content Creator | 멀티 플랫폼 콘텐츠, 에디토리얼 캘린더 | 콘텐츠 전략 또는 제작 |
+| Twitter Engager | 실시간 응대, 소트 리더십 | Twitter/X 캠페인 |
+| TikTok Strategist | 바이럴 숏폼 영상, 알고리즘 최적화 | TikTok 그로스 전략 |
+| Instagram Curator | 비주얼 스토리텔링, 감각적 톤 구축 | Instagram 캠페인 |
+| Reddit Community Builder | 진정성 있는 참여, 가치 중심 콘텐츠 | Reddit 커뮤니티 전략 |
+| App Store Optimizer | ASO, 전환 최적화 | 모바일 앱 스토어 노출 |
+| Social Media Strategist | 크로스 플랫폼 전략, 캠페인 | 멀티 플랫폼 소셜 캠페인 |
+
+### 제품 부문 — "맞는 것을 만든다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Sprint Prioritizer | RICE 점수화, 애자일 계획, 벨로시티 | 스프린트 계획 또는 백로그 정리 |
+| Trend Researcher | 시장 정보, 경쟁 분석 | 시장 조사 또는 기회 평가 |
+| Feedback Synthesizer | 사용자 피드백 분석, 감성 분석 | 사용자 피드백 처리 |
+
+### 프로젝트 관리 부문 — "궤도를 유지한다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Studio Producer | 포트폴리오 전략, 경영진 수준 오케스트레이션 | 전략 기획 또는 포트폴리오 관리 |
+| Project Shepherd | 부서 간 조율, 이해관계자 정렬 | 복잡한 프로젝트 조율 |
+| Studio Operations | 일상 운영 효율, 프로세스 최적화 | 운영 지원 |
+| Experiment Tracker | A/B 테스트, 가설 검증 | 실험 관리 |
+| Senior Project Manager | 명세를 과업으로 변환, 현실적인 범위 설정 | 과업 계획 또는 범위 관리 |
+
+### 테스팅 부문 — "동작함을 증명한다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Evidence Collector | 스크린샷 기반 QA, 시각 증거 | 모든 시각적 검증 필요 시 |
+| Reality Checker | 증거 기반 인증, 회의적 평가 | 최종 통합 테스트 |
+| Test Results Analyzer | 테스트 평가, 품질 지표 | 테스트 결과 분석 |
+| Performance Benchmarker | 부하 테스트, 성능 최적화 | 성능 테스트 |
+| API Tester | API 검증, 통합 테스트 | API 엔드포인트 테스트 |
+| Tool Evaluator | 기술 평가, 도구 선정 | 기술 검토 |
+| Workflow Optimizer | 프로세스 분석, 효율 개선 | 프로세스 최적화 |
+
+### 지원 부문 — "지탱한다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Support Responder | 고객 서비스, 이슈 해결 | 고객 지원 필요 시 |
+| Analytics Reporter | 데이터 분석, 대시보드, KPI 추적 | 비즈니스 인텔리전스 또는 보고 |
+| Finance Tracker | 재무 기획, 예산 관리 | 재무 분석 또는 예산 수립 |
+| Infrastructure Maintainer | 시스템 신뢰성, 성능 최적화 | 인프라 관리 |
+| Legal Compliance Checker | 컴플라이언스, 규제, 법률 검토 | 법률 또는 컴플라이언스 이슈 |
+| Executive Summary Generator | 경영진 커뮤니케이션, SCQA 프레임워크 | 경영진 보고 |
+
+### 공간 컴퓨팅 부문 — "몰입시킨다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| XR Interface Architect | 공간 인터랙션 설계 | AR/VR/XR 인터페이스 설계 |
+| macOS Spatial/Metal Engineer | Swift, Metal, 고성능 3D | macOS 공간 컴퓨팅 |
+| XR Immersive Developer | WebXR, 브라우저 기반 AR/VR | 브라우저 기반 몰입형 경험 |
+| XR Cockpit Interaction Specialist | 콕핏 기반 컨트롤 | 몰입형 제어 인터페이스 |
+| visionOS Spatial Engineer | Apple Vision Pro 개발 | Vision Pro 애플리케이션 |
+| Terminal Integration Specialist | CLI 도구, 터미널 워크플로 | 개발자 도구 연동 |
+
+### 전문 분야 부문 — "모든 것을 연결한다"
+| 에이전트 | 강점 | 활성화 트리거 |
+|-------|-----------|-------------------|
+| Agents Orchestrator | 멀티 에이전트 파이프라인 관리 | 모든 멀티 에이전트 워크플로 |
+| Analytics Reporter | 비즈니스 인텔리전스, 심층 분석 | 심층 데이터 분석 |
+| LSP/Index Engineer | Language Server Protocol, 코드 인텔리전스 | 코드 인텔리전스 시스템 |
+| Sales Data Extraction Agent | Excel 모니터링, 영업 지표 추출 | 영업 데이터 수집 |
+| Data Consolidation Agent | 영업 데이터 집계, 대시보드 리포트 | 지역 및 담당자별 보고 |
+| Report Distribution Agent | 리포트 자동 배포 | 정기 리포트 배포 |
+
+---
+
+## 부록 B: NEXUS 파이프라인 상태 리포트 템플릿
+
+```markdown
+# NEXUS 파이프라인 상태 리포트
+
+## 파이프라인 메타데이터
+- **프로젝트**: [Name]
+- **모드**: [Full / Sprint / Micro]
+- **현재 단계**: [0-6]
+- **시작**: [Timestamp]
+- **완료 예상**: [Timestamp]
+
+## 단계 진행 현황
+| 단계 | 상태 | 완료율 | 게이트 결과 |
+|-------|--------|------------|-------------|
+| 0 - 디스커버리 | ✅ 완료 | 100% | PASSED |
+| 1 - 전략 | ✅ 완료 | 100% | PASSED |
+| 2 - 기반 구축 | 🔄 진행 중 | 75% | PENDING |
+| 3 - 구현 | ⏳ 대기 | 0% | — |
+| 4 - 하드닝 | ⏳ 대기 | 0% | — |
+| 5 - 출시 | ⏳ 대기 | 0% | — |
+| 6 - 운영 | ⏳ 대기 | 0% | — |
+
+## 현재 단계 상세
+**단계**: [N] - [Name]
+**활성 에이전트**: [List]
+**과업**: [Completed/Total]
+**현재 과업**: [ID] - [Description]
+**QA 상태**: [PASS/FAIL/IN_PROGRESS]
+**재시도 횟수**: [N/3]
+
+## 품질 지표
+- 첫 시도에 통과한 과업: [X/Y] ([Z]%)
+- 과업당 평균 재시도: [N]
+- 발견된 치명적 이슈: [Count]
+- 해결된 치명적 이슈: [Count]
+
+## 리스크 레지스터
+| 리스크 | 심각도 | 상태 | 담당 |
+|------|----------|--------|-------|
+| [Description] | [P0-P3] | [Active/Mitigated/Closed] | [Agent] |
+
+## 다음 액션
+1. [바로 다음 단계]
+2. [그다음 단계]
+3. [다가오는 마일스톤]
+
+---
+**리포트 생성 시각**: [Timestamp]
+**오케스트레이터**: Agents Orchestrator
+**파이프라인 상태**: [ON_TRACK / AT_RISK / BLOCKED]
+```
+
+---
+
+## 부록 C: NEXUS 용어집
+
+| 용어 | 정의 |
+|------|-----------|
+| **NEXUS** | Network of EXperts, Unified in Strategy |
+| **품질 게이트** | 증거 기반 승인을 요구하는 단계 간 필수 체크포인트 |
+| **Dev↔QA 루프** | 각 과업이 다음으로 넘어가기 전에 QA를 통과해야 하는 지속적 개발-테스트 사이클 |
+| **핸드오프** | 에이전트 간 작업과 컨텍스트의 구조화된 인계 |
+| **게이트 키퍼** | 단계 진행을 승인하거나 반려할 권한을 가진 에이전트 |
+| **에스컬레이션** | 재시도를 소진한 막힌 과업을 상위 권한으로 올리는 것 |
+| **NEXUS-Full** | 모든 에이전트를 투입하는 전체 파이프라인 활성화 |
+| **NEXUS-Sprint** | 기능/MVP 작업을 위해 15~25명의 에이전트로 구성한 집중 파이프라인 |
+| **NEXUS-Micro** | 특정 과업을 위해 5~10명의 에이전트를 투입하는 활성화 |
+| **파이프라인 정합성** | 품질 게이트를 통과하지 않으면 어떤 단계도 넘어가지 않는다는 원칙 |
+| **컨텍스트 연속성** | 모든 핸드오프가 전체 컨텍스트를 함께 전달한다는 원칙 |
+| **주장보다 증거** | 품질 평가에는 단언이 아닌 증거가 필요하다는 원칙 |
+
+---
+
+<div align="center">
+
+**🌐 NEXUS: 모든 부문. 7개 단계. 하나의 통합 전략. 🌐**
+
+*디스커버리에서 지속 운영까지 — 모든 에이전트가 자신의 역할, 타이밍, 핸드오프를 정확히 알고 있습니다.*
+
+</div>
