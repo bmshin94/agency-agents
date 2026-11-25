@@ -108,3 +108,335 @@ cp engineering/*.md ~/.claude/agents/
 자세한 내용은 아래 [멀티 도구 통합](#-멀티-도구-통합) 섹션을 참고하세요.
 
 ---
+
+## 🎨 The Agency 로스터
+
+### 💻 엔지니어링 디비전
+
+커밋 하나하나로 미래를 만듭니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎨 [Frontend Developer](engineering/engineering-frontend-developer.md) | React/Vue/Angular, UI 구현, 성능 | 모던 웹 앱, 픽셀 단위로 정확한 UI, Core Web Vitals 최적화 |
+| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md) | API 설계, 데이터베이스 아키텍처, 확장성 | 서버 사이드 시스템, 마이크로서비스, 클라우드 인프라 |
+| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter | 네이티브 및 크로스 플랫폼 모바일 애플리케이션 |
+| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md) | ML 모델, 배포, AI 통합 | 머신러닝 기능, 데이터 파이프라인, AI 기반 앱 |
+| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md) | CI/CD, 인프라 자동화, 클라우드 운영 | 파이프라인 개발, 배포 자동화, 모니터링 |
+| 🌐 [Network Engineer](engineering/engineering-network-engineer.md) | Cisco IOS/IOS-XE, Juniper Junos, Palo Alto PAN-OS | 라우터/스위치/방화벽 설정, BGP/OSPF, ACL, show 출력 기반 트러블슈팅 |
+| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | 빠른 POC 개발, MVP | 신속한 개념 증명, 해커톤 프로젝트, 빠른 반복 |
+| 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, 고급 패턴 | 복잡한 구현, 아키텍처 의사결정 |
+| 🔧 [Filament Optimization Specialist](engineering/engineering-filament-optimization-specialist.md) | Filament PHP 어드민 UX, 폼 구조 재설계, 리소스 최적화 | 더 빠르고 깔끔한 어드민 워크플로를 위한 Filament 리소스/폼/테이블 재구성 |
+| ⚡ [Autonomous Optimization Architect](engineering/engineering-autonomous-optimization-architect.md) | LLM 라우팅, 비용 최적화, 섀도 테스팅 | 지능적인 API 선택과 비용 가드레일이 필요한 자율 시스템 |
+| 🔩 [Embedded Firmware Engineer](engineering/engineering-embedded-firmware-engineer.md) | 베어메탈, RTOS, ESP32/STM32/Nordic 펌웨어 | 프로덕션급 임베디드 시스템과 IoT 기기 |
+| 🚨 [Incident Response Commander](engineering/engineering-incident-response-commander.md) | 장애 관리, 포스트모템, 온콜 | 프로덕션 장애 대응과 장애 대비 체계 구축 |
+| ⛓️ [Solidity Smart Contract Engineer](engineering/engineering-solidity-smart-contract-engineer.md) | EVM 컨트랙트, 가스 최적화, DeFi | 안전하고 가스 효율적인 스마트 컨트랙트와 DeFi 프로토콜 |
+| 🧭 [Codebase Onboarding Engineer](engineering/engineering-codebase-onboarding-engineer.md) | 빠른 개발자 온보딩, 읽기 전용 코드베이스 탐색, 사실 기반 설명 | 코드를 읽고 코드 경로를 추적하며 구조와 동작에 대한 사실을 전달해, 새 개발자가 낯선 리포지토리를 빠르게 이해하도록 돕기 |
+| 📚 [Technical Writer](engineering/engineering-technical-writer.md) | 개발자 문서, API 레퍼런스, 튜토리얼 | 명확하고 정확한 기술 문서 |
+| 💬 [WeChat Mini Program Developer](engineering/engineering-wechat-mini-program-developer.md) | 위챗(WeChat) 생태계, 미니 프로그램, 결제 연동 | 위챗 생태계를 위한 고성능 앱 개발 |
+| 👁️ [Code Reviewer](engineering/engineering-code-reviewer.md) | 건설적인 코드 리뷰, 보안, 유지보수성 | PR 리뷰, 코드 품질 게이트, 리뷰를 통한 멘토링 |
+| 🗄️ [Database Optimizer](engineering/engineering-database-optimizer.md) | 스키마 설계, 쿼리 최적화, 인덱싱 전략 | PostgreSQL/MySQL 튜닝, 느린 쿼리 디버깅, 마이그레이션 계획 |
+| 🌿 [Git Workflow Master](engineering/engineering-git-workflow-master.md) | 브랜칭 전략, 컨벤셔널 커밋, 고급 Git | Git 워크플로 설계, 히스토리 정리, CI 친화적 브랜치 관리 |
+| 🏛️ [Software Architect](engineering/engineering-software-architect.md) | 시스템 설계, DDD, 아키텍처 패턴, 트레이드오프 분석 | 아키텍처 의사결정, 도메인 모델링, 시스템 진화 전략 |
+| 🛡️ [SRE](engineering/engineering-sre.md) | SLO, 에러 버짓, 옵저버빌리티, 카오스 엔지니어링 | 프로덕션 신뢰성, 토일 감소, 용량 계획 |
+| 🧬 [AI Data Remediation Engineer](engineering/engineering-ai-data-remediation-engineer.md) | 자가 치유 파이프라인, 에어갭 SLM, 시맨틱 클러스터링 | 데이터 손실 없이 대규모로 깨진 데이터 복구 |
+| 🔧 [Data Engineer](engineering/engineering-data-engineer.md) | 데이터 파이프라인, 레이크하우스 아키텍처, ETL/ELT | 신뢰할 수 있는 데이터 인프라와 웨어하우스 구축 |
+| 🔗 [Feishu Integration Developer](engineering/engineering-feishu-integration-developer.md) | 페이슈(飞书)/Lark 오픈 플랫폼, 봇, 워크플로 | 페이슈 생태계용 연동 개발 |
+| 🧱 [CMS Developer](engineering/engineering-cms-developer.md) | WordPress·Drupal 테마, 플러그인/모듈, 콘텐츠 아키텍처 | 코드 중심의 CMS 구현과 커스터마이징 |
+| 📧 [Email Intelligence Engineer](engineering/engineering-email-intelligence-engineer.md) | 이메일 파싱, MIME 추출, AI 에이전트용 구조화 데이터 | 원본 이메일 스레드를 추론 가능한 컨텍스트로 변환 |
+| 🎙️ [Voice AI Integration Engineer](engineering/engineering-voice-ai-integration-engineer.md) | 음성 인식 파이프라인, Whisper, ASR, 화자 분리 | 엔드투엔드 전사 파이프라인, 오디오 전처리, 구조화된 전사 결과 제공 |
+| 🖧 [IT Service Manager](engineering/engineering-it-service-manager.md) | ITIL 4 서비스 관리 | 인시던트/문제/변경 관리, SLA, CMDB |
+| 🪡 [Minimal Change Engineer](engineering/engineering-minimal-change-engineer.md) | 최소한의 변경 디프 | 요청받은 것만 수정, 스코프 확장 없음 |
+| 📜 [OrgScript Engineer](engineering/engineering-orgscript-engineer.md) | OrgScript 문법 및 AST 검증 | OrgScript 비즈니스 로직 정의 설계·파싱 |
+| 🧬 [Prompt Engineer](engineering/engineering-prompt-engineer.md) | LLM 프롬프트 설계·최적화 | 모호한 지시를 믿을 수 있는 AI 동작으로 바꾸기 |
+| 🕸️ [Multi-Agent Systems Architect](engineering/engineering-multi-agent-systems-architect.md) | 멀티 에이전트 파이프라인 설계와 거버넌스 | 에이전트 시스템의 토폴로지, 컨텍스트, 신뢰, 장애 복구 |
+| 🛒 [Drupal Shopping Cart Engineer](engineering/engineering-drupal-shopping-cart.md) | Drupal Commerce 스토어프런트 | Drupal 10/11에서의 카탈로그, 결제, 체크아웃, 주문 |
+| 🛍️ [WordPress Shopping Cart Engineer](engineering/engineering-wordpress-shopping-cart.md) | WooCommerce 스토어프런트 | WordPress에서의 카탈로그, 결제, 체크아웃, 전환 |
+| 💳 [Payments & Billing Engineer](engineering/engineering-payments-billing-engineer.md) | PSP 연동, 멱등성 있는 결제 플로, 구독 과금 | Stripe/Adyen/Braintree 연동, 웹훅 처리, 미납 독촉(dunning), 정산 대조 |
+| 🌍 [Internationalization Engineer](engineering/engineering-i18n-engineer.md) | ICU MessageFormat, RTL/양방향 레이아웃, CLDR 포매팅, 의사 현지화 | 번역 가능한 앱 만들기, 로케일 인식 포매팅, RTL 지원, i18n 감사 |
+| ⚡ [Drupal Performance Engineer](engineering/engineering-drupal-performance.md) | Drupal 성능과 Core Web Vitals | 캐싱, DB/쿼리 튜닝, 렌더 파이프라인, 대규모 트래픽 Drupal 프로파일링 |
+| ⚡ [WordPress Performance Engineer](engineering/engineering-wordpress-performance.md) | WordPress 성능과 Core Web Vitals | 캐싱, 쿼리/에셋 최적화, 플러그인 튜닝, 대규모 트래픽 WP 프로파일링 |
+| ♿ [Section 508 Accessibility Specialist](engineering/engineering-section-508-specialist.md) | 미국 연방 508조 / WCAG 접근성 | ARIA, 스크린 리더 테스트, VPAT/ACR 작성, 개선 작업 |
+| 🏛️ [USWDS Developer](engineering/engineering-uswds-developer.md) | US Web Design System (미 연방) | 접근성 있는 공공 UI 컴포넌트와 디자인 시스템 패턴 |
+| 🔎 [Search Relevance Engineer](engineering/engineering-search-relevance-engineer.md) | 검색 랭킹과 연관성 | 쿼리 이해, 임베딩, 랭킹/평가, 연관성 튜닝 |
+| 🔐 [Identity & Access Engineer](engineering/engineering-identity-access-engineer.md) | 인증/인가와 IAM | OAuth/OIDC/SAML, SSO, RBAC/ABAC, 토큰·세션 보안 |
+| 🤝 [Realtime Collaboration Engineer](engineering/engineering-realtime-collaboration-engineer.md) | 실시간 동기화와 프레즌스 | CRDT/OT, 충돌 해결, 라이브 커서, 오프라인 동기화 |
+| 💻 [Desktop App Engineer](engineering/engineering-desktop-app-engineer.md) | 크로스 플랫폼 데스크톱 앱 | Electron/Tauri, 네이티브 연동, 패키징, 자동 업데이트 |
+| 🚀 [Mobile Release Engineer](engineering/engineering-mobile-release-engineer.md) | 모바일 릴리스와 CI/CD | App Store/Play 심사 제출, 서명, 단계적 롤아웃, 크래시 분류 |
+| 🎬 [Video Streaming Engineer](engineering/engineering-video-streaming-engineer.md) | 비디오 스트리밍과 트랜스코딩 | HLS/DASH, ABR, 코덱, CDN 전송, 저지연 스트리밍 |
+| 💰 [FinOps Engineer](engineering/engineering-finops-engineer.md) | 클라우드 비용 엔지니어링 | 비용 배분, 라이트사이징, 단위 경제성, 예산·이상치 관리 |
+| 🧩 [WebAssembly Engineer](engineering/engineering-webassembly-engineer.md) | WebAssembly와 WASI | Rust/C++→WASM, 샌드박싱, 호스트 바인딩, 성능 |
+| 🔌 [API Platform Engineer](engineering/engineering-api-platform-engineer.md) | API 게이트웨이와 플랫폼 | 게이트웨이 설계, 버저닝, 레이트 리밋, 개발자 포털 |
+| 🛟 [Database Reliability Engineer](engineering/engineering-database-reliability-engineer.md) | 데이터베이스 신뢰성 (DBRE) | HA/복제, 자동 페일오버, PITR 백업, 무중단 운영 |
+| 🛠️ [Developer Tooling Engineer](engineering/engineering-developer-tooling-engineer.md) | CLI와 개발자 도구 | 커맨드라인 도구, 내부 DX, 빌드/개발 워크플로 |
+| 📡 [IoT Fleet Engineer](engineering/engineering-iot-fleet-engineer.md) | IoT와 엣지 플릿 | 기기 프로비저닝/신원, MQTT 텔레메트리, OTA 업데이트 |
+| 🔍 [RAG Pipeline Engineer](engineering/engineering-rag-pipeline-engineer.md) | 프로덕션 RAG 파이프라인 | 청킹, 검색 품질, 하이브리드 검색, 리랭킹, 평가 기반 반복 개선 |
+| 🗄️ [GaussDB Expert Engineer](engineering/engineering-gaussdb-expert.md) | 화웨이 GaussDB OLTP | 화웨이 GaussDB에서의 엔터프라이즈 OLTP 성능, HA, 마이그레이션 |
+| 🕵️ [Privacy Engineer](engineering/engineering-privacy-engineer.md) | PII 탐색, 데이터 최소화, 동의 집행, DSAR/삭제 파이프라인 | 코드로 구현하는 프라이버시, 서비스 전반의 잊힐 권리, 보관 기간 자동화 |
+| 🦀 [Rust Refactoring Specialist](engineering/engineering-rust-refactoring-specialist.md) | 동작을 이해한 Rust 리팩터링 | 근거 기반·동작 보존 변경으로 crate/trait/모듈 재구성 |
+| 🧪 [LLM Post-Training Engineer](engineering/engineering-llm-post-training-engineer.md) | 포스트 트레이닝 스택 (SFT/DPO/GRPO/RLVR) | 근거 기반 실험 게이팅, 체크포인트 무결성, 실패 분류 |
+| 📈 [Data Visualization Engineer](engineering/engineering-data-visualization-engineer.md) | 지각적으로 정직한 데이터 시각화 | 차트 유형 선택, 색각 이상 안전 팔레트, 성능 좋은 D3/Vega 렌더링 |
+| 🧠 [Knowledge Graph Engineer](engineering/engineering-knowledge-graph-engineer.md) | 지식 그래프, 엔터티-관계 추출, 그래프 강화 RAG | LangGraph로 문서를 질의 가능한 Neo4j 그래프로 구조화. 출처 추적, 모순 추적, 서브그래프 검색 |
+| 🌏 [China Network Engineer](engineering/engineering-china-network-engineer.md) | 화웨이 VRP, H3C Comware, Ruijie RGOS, Hillstone StoneOS | 라우팅/스위칭/방화벽 설계, NAT, MLPS 2.0 준수 경계, 롤백 계획이 있는 변경 작업 창 |
+| 🛤️ [Platform Engineer](engineering/engineering-platform-engineer.md) | 내부 개발자 플랫폼, 골든 패스, IDP, 셀프서비스 인프라 | 포장도로형 스캐폴딩, 개발자 경험 측정, 제품으로서의 플랫폼 로드맵 |
+| 📑 [PDF Engine Architect](engineering/engineering-pdf-engine-architect.md) | 결정론적 HTML→PDF 컴파일, 태그 PDF/UA 및 PDF/A | Playwright 렌더 풀, 동적 페이지 크기 조정, 보존용 품질의 문서 출력 |
+| 🎯 [ATS Validator Architect](engineering/engineering-ats-validator-architect.md) | 이력서 파싱 가능성, ATS 수집 파이프라인 | BM25/TF-IDF 연관성 점수, 레이아웃 선형화 감사, EU AI Act 및 NYC LL144 준수 |
+| 📑 [Universal Document Compiler](engineering/engineering-universal-document-compiler.md) | 스키마에 구애받지 않는 문서 AST, 데이터 형태 기반 레이아웃 추론, 페이지 단위 퍼블리싱 | 임의의 YAML 트리를 제안서, 기술 명세, 임원용 보고서로 컴파일 |
+
+### 🎨 디자인 디비전
+
+아름답고, 쓰기 쉽고, 즐겁게 만듭니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎯 [UI Designer](design/design-ui-designer.md) | 비주얼 디자인, 컴포넌트 라이브러리, 디자인 시스템 | 인터페이스 제작, 브랜드 일관성, 컴포넌트 디자인 |
+| 🔍 [UX Researcher](design/design-ux-researcher.md) | 사용자 테스트, 행동 분석, 리서치 | 사용자 이해, 사용성 테스트, 디자인 인사이트 |
+| 🏛️ [UX Architect](design/design-ux-architect.md) | 기술 아키텍처, CSS 시스템, 구현 | 개발자 친화적 기반 설계, 구현 가이드 |
+| 🎭 [Brand Guardian](design/design-brand-guardian.md) | 브랜드 아이덴티티, 일관성, 포지셔닝 | 브랜드 전략, 아이덴티티 개발, 가이드라인 |
+| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | 비주얼 내러티브, 멀티미디어 콘텐츠 | 설득력 있는 비주얼 스토리, 브랜드 스토리텔링 |
+| ✨ [Whimsy Injector](design/design-whimsy-injector.md) | 개성, 즐거움, 장난기 있는 인터랙션 | 재미 더하기, 마이크로 인터랙션, 이스터에그, 브랜드 개성 |
+| 📷 [Image Prompt Engineer](design/design-image-prompt-engineer.md) | AI 이미지 생성 프롬프트, 사진 | Midjourney, DALL-E, Stable Diffusion용 사진 프롬프트 |
+| 🌈 [Inclusive Visuals Specialist](design/design-inclusive-visuals-specialist.md) | 대표성, 편향 완화, 진정성 있는 이미지 | 문화적으로 정확한 AI 이미지·영상 생성 |
+| 🎭 [Persona Walkthrough Specialist](design/design-persona-walkthrough.md) | 페르소나 기반 인지적 워크스루 | 스크롤 위치마다 사용자 반응과 마찰 지점 시뮬레이션 |
+| 🧱 [UI Finish-Gate Reviewer](design/design-ui-finish-gate-reviewer.md) | 흔해 빠진 UI를 막는 마감 게이트 | 증거와 문서화된 디자인 계약으로 출시 전 교체 가능한 UI 걸러내기 |
+
+### 💰 유료 미디어 디비전
+
+광고비를 측정 가능한 비즈니스 성과로 바꿉니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+| --- | --- | --- |
+| 💰 [PPC Campaign Strategist](paid-media/paid-media-ppc-strategist.md) | Google/Microsoft/Amazon Ads, 계정 구조, 입찰 | 계정 구축, 예산 배분, 확장, 성과 진단 |
+| 🔍 [Search Query Analyst](paid-media/paid-media-search-query-analyst.md) | 검색어 분석, 제외 키워드, 인텐트 매핑 | 검색어 감사, 낭비되는 지출 제거, 키워드 발굴 |
+| 📋 [Paid Media Auditor](paid-media/paid-media-auditor.md) | 200개 이상 항목의 계정 감사, 경쟁 분석 | 계정 인수, 분기 리뷰, 경쟁 피치 |
+| 📡 [Tracking & Measurement Specialist](paid-media/paid-media-tracking-specialist.md) | GTM, GA4, 전환 추적, CAPI | 신규 구축, 추적 감사, 플랫폼 마이그레이션 |
+| ✍️ [Ad Creative Strategist](paid-media/paid-media-creative-strategist.md) | RSA 카피, Meta 크리에이티브, Performance Max 에셋 | 크리에이티브 출시, 테스트 프로그램, 광고 피로도 리프레시 |
+| 📺 [Programmatic & Display Buyer](paid-media/paid-media-programmatic-buyer.md) | GDN, DSP, 파트너 미디어, ABM 디스플레이 | 디스플레이 기획, 파트너 발굴, ABM 프로그램 |
+| 📱 [Paid Social Strategist](paid-media/paid-media-paid-social-strategist.md) | Meta, LinkedIn, TikTok, 크로스 플랫폼 소셜 | 소셜 광고 프로그램, 플랫폼 선정, 오디언스 전략 |
+
+### 💼 세일즈 디비전
+
+CRM 잡무가 아니라 실력으로 파이프라인을 매출로 바꿉니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎯 [Outbound Strategist](sales/sales-outbound-strategist.md) | 시그널 기반 프로스펙팅, 멀티채널 시퀀스, ICP 타게팅 | 물량이 아니라 리서치 기반 아웃리치로 파이프라인 만들기 |
+| 🔍 [Discovery Coach](sales/sales-discovery-coach.md) | SPIN, Gap Selling, Sandler — 질문 설계와 콜 구조 | 디스커버리 콜 준비, 기회 검증, 영업 담당 코칭 |
+| ♟️ [Deal Strategist](sales/sales-deal-strategist.md) | MEDDPICC 검증, 경쟁 포지셔닝, 수주 계획 | 딜 점수화, 파이프라인 리스크 노출, 수주 전략 수립 |
+| 🛠️ [Sales Engineer](sales/sales-engineer.md) | 기술 데모, POC 범위 설정, 경쟁 배틀카드 | 프리세일즈 기술 승리, 데모 준비, 경쟁 포지셔닝 |
+| 🏹 [Proposal Strategist](sales/sales-proposal-strategist.md) | RFP 대응, 수주 테마, 내러티브 구조 | 요건만 채우는 게 아니라 설득하는 제안서 쓰기 |
+| 📊 [Pipeline Analyst](sales/sales-pipeline-analyst.md) | 예측, 파이프라인 건강도, 딜 속도, RevOps | 파이프라인 리뷰, 예측 정확도, 레비뉴 오퍼레이션 |
+| 🗺️ [Account Strategist](sales/sales-account-strategist.md) | 랜드 앤 익스팬드, QBR, 이해관계자 맵핑 | 사후 확장, 어카운트 플래닝, NRR 성장 |
+| 🏋️ [Sales Coach](sales/sales-coach.md) | 담당자 역량 개발, 콜 코칭, 파이프라인 리뷰 진행 | 체계적인 코칭으로 모든 담당자와 모든 딜을 더 좋게 만들기 |
+| 🎯 [Sales Outreach](specialized/sales-outreach.md) | 콜드 프로스펙팅, 멀티터치 케이던스, 반론 처리, 제안서 | 콜드 이메일부터 디스커버리 콜 예약까지, B2B 퍼널 상단 아웃리치 |
+| 🧲 [Offer & Lead Gen Strategist](sales/sales-offer-lead-gen-strategist.md) | 오퍼와 리드 마그넷 | 퍼널 상단 오퍼 설계와 리드 제너레이션 |
+
+### 📢 마케팅 디비전
+
+진정성 있는 상호작용 하나하나로 오디언스를 키웁니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md) | 빠른 유저 확보, 바이럴 루프, 실험 | 폭발적 성장, 유저 확보, 전환 최적화 |
+| 📝 [Content Creator](marketing/marketing-content-creator.md) | 멀티 플랫폼 콘텐츠, 에디토리얼 캘린더 | 콘텐츠 전략, 카피라이팅, 브랜드 스토리텔링 |
+| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md) | 실시간 인게이지먼트, 소트 리더십 | 트위터 전략, LinkedIn 캠페인, 프로페셔널 소셜 |
+| 🛰️ [X/Twitter Intelligence Analyst](marketing/marketing-x-twitter-intelligence-analyst.md) | 소셜 리스닝, 트렌드 탐지, 계정 모니터링 | X/Twitter에서의 브랜드 리스크, 경쟁사, 오디언스 인텔리전스 |
+| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md) | 바이럴 콘텐츠, 알고리즘 최적화 | TikTok 성장, 바이럴 콘텐츠, Z세대/밀레니얼 오디언스 |
+| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md) | 비주얼 스토리텔링, 커뮤니티 구축 | 인스타그램 전략, 미감 개발, 비주얼 콘텐츠 |
+| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | 진정성 있는 참여, 가치 중심 콘텐츠 | 레딧 전략, 커뮤니티 신뢰, 진정성 있는 마케팅 |
+| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md) | ASO, 전환 최적화, 발견 가능성 | 앱 마케팅, 스토어 최적화, 앱 성장 |
+| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md) | 크로스 플랫폼 전략, 캠페인 | 전체 소셜 전략, 멀티 플랫폼 캠페인 |
+| 📕 [Xiaohongshu Specialist](marketing/marketing-xiaohongshu-specialist.md) | 라이프스타일 콘텐츠, 트렌드 기반 전략 | 샤오홍슈(小红书) 성장, 감각적인 스토리텔링, Z세대 오디언스 |
+| 💬 [WeChat Official Account Manager](marketing/marketing-wechat-official-account.md) | 구독자 인게이지먼트, 콘텐츠 마케팅 | 위챗(WeChat) 공식 계정 전략, 커뮤니티 구축, 전환 최적화 |
+| 🧠 [Zhihu Strategist](marketing/marketing-zhihu-strategist.md) | 소트 리더십, 지식 기반 인게이지먼트 | 즈후(知乎) 권위 구축, Q&A 전략, 리드 제너레이션 |
+| 🇨🇳 [Baidu SEO Specialist](marketing/marketing-baidu-seo-specialist.md) | 바이두 최적화, 중국 SEO, ICP 준수 | 바이두 상위 노출과 중국 검색 시장 공략 |
+| 🎬 [Bilibili Content Strategist](marketing/marketing-bilibili-content-strategist.md) | 빌리빌리(B站) 알고리즘, 단무(弹幕) 문화, UP주(UP主) 성장 | 커뮤니티 우선 콘텐츠로 빌리빌리 오디언스 키우기 |
+| 🎠 [Carousel Growth Engine](marketing/marketing-carousel-growth-engine.md) | TikTok/Instagram 캐러셀, 자율 퍼블리싱 | 바이럴 캐러셀 콘텐츠 생성과 발행 |
+| 💼 [LinkedIn Content Creator](marketing/marketing-linkedin-content-creator.md) | 퍼스널 브랜딩, 소트 리더십, 프로페셔널 콘텐츠 | LinkedIn 성장, 전문가 오디언스 구축, B2B 콘텐츠 |
+| 🛒 [China E-Commerce Operator](marketing/marketing-china-ecommerce-operator.md) | 타오바오, 티몰, 핀둬둬, 라이브 커머스 | 중국에서 멀티 플랫폼 이커머스 운영 |
+| 🎥 [Kuaishou Strategist](marketing/marketing-kuaishou-strategist.md) | 콰이쇼우(快手), 라오톄(老铁) 커뮤니티, 풀뿌리 성장 | 하위 티어 도시 시장에서 진정성 있는 오디언스 구축 |
+| 🔍 [SEO Specialist](marketing/marketing-seo-specialist.md) | 테크니컬 SEO, 콘텐츠 전략, 링크 빌딩 | 지속 가능한 오가닉 검색 성장 견인 |
+| 📘 [Book Co-Author](marketing/marketing-book-co-author.md) | 소트 리더십 도서, 대필, 출판 | 창업자와 전문가를 위한 전략적 도서 공동 작업 |
+| 🌏 [Cross-Border E-Commerce Specialist](marketing/marketing-cross-border-ecommerce.md) | Amazon, Shopee, Lazada, 크로스보더 풀필먼트 | 풀퍼널 크로스보더 이커머스 전략 |
+| 🎵 [Douyin Strategist](marketing/marketing-douyin-strategist.md) | 더우인(抖音) 플랫폼, 숏폼 영상 마케팅, 알고리즘 | 중국 1위 숏폼 영상 플랫폼에서 오디언스 키우기 |
+| 🎙️ [Livestream Commerce Coach](marketing/marketing-livestream-commerce-coach.md) | 호스트 교육, 라이브룸 최적화, 전환 | 성과 높은 라이브 커머스 운영 체계 구축 |
+| 🎧 [Podcast Strategist](marketing/marketing-podcast-strategist.md) | 팟캐스트 콘텐츠 전략, 플랫폼 최적화 | 중국 팟캐스트 시장 전략과 운영 |
+| 🔒 [Private Domain Operator](marketing/marketing-private-domain-operator.md) | 위컴(WeCom), 사적 트래픽, 커뮤니티 운영 | 기업용 위챗 사적 도메인 생태계 구축 |
+| 🎬 [Short-Video Editing Coach](marketing/marketing-short-video-editing-coach.md) | 후반 작업, 편집 워크플로, 플랫폼 규격 | 실습 중심 숏폼 영상 편집 교육과 최적화 |
+| 🔥 [Weibo Strategist](marketing/marketing-weibo-strategist.md) | 시나 웨이보(微博), 실시간 트렌드, 팬 인게이지먼트 | 웨이보 전방위 운영과 성장 |
+| 🎙️ [Global Podcast Strategist](marketing/marketing-global-podcast-strategist.md) | 쇼 포지셔닝, 오디언스 성장, 수익화 | 팟캐스트 런치, 플랫폼 알고리즘, 스폰서십, 커뮤니티 구축 |
+| 🔮 [AI Citation Strategist](marketing/marketing-ai-citation-strategist.md) | AEO/GEO, AI 추천 가시성, 인용 감사 | ChatGPT, Claude, Gemini, Perplexity 전반에서 브랜드 가시성 높이기 |
+| 🇨🇳 [China Market Localization Strategist](marketing/marketing-china-market-localization-strategist.md) | 풀스택 중국 시장 현지화, 더우인/샤오홍슈/위챗 GTM | 트렌드 시그널을 실행 가능한 중국 진출 전략으로 전환 |
+| 🎬 [Video Optimization Specialist](marketing/marketing-video-optimization-specialist.md) | 유튜브 알고리즘 전략, 챕터링, 썸네일 컨셉 | 유튜브 채널 성장, 비디오 SEO, 시청 지속률 최적화 |
+| 🏗️ [AEO Foundations Architect](marketing/marketing-aeo-foundations.md) | AI 엔진 최적화 인프라 | llms.txt, AI를 고려한 robots.txt, 에이전트 디스커버리 파일 |
+| 🤖 [Agentic Search Optimizer](marketing/marketing-agentic-search-optimizer.md) | WebMCP와 에이전틱 작업 완수 | AI 브라우징 에이전트가 쓸 수 있는 사이트 만들기 |
+| 📧 [Email Marketing Strategist](marketing/marketing-email-strategist.md) | 라이프사이클 이메일과 도달률 | CRM 캠페인, 자동화, 세그멘테이션 |
+| 📡 [Multi-Platform Publisher](marketing/marketing-multi-platform-publisher.md) | 원클릭 중국 멀티 플랫폼 퍼블리싱 | 하나의 글을 知乎/小红书/CSDN/B站/公众号/掘金으로 분배 |
+| 📣 [PR & Communications Manager](marketing/marketing-pr-communications-manager.md) | PR, 미디어 관계, 위기 커뮤니케이션 | 보도자료, 소트 리더십, 평판 관리 |
+
+### 📊 프로덕트 디비전
+
+맞는 것을, 맞는 때에 만듭니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | 애자일 플래닝, 기능 우선순위 결정 | 스프린트 플래닝, 리소스 배분, 백로그 관리 |
+| 🔍 [Trend Researcher](product/product-trend-researcher.md) | 시장 인텔리전스, 경쟁 분석 | 시장 조사, 기회 평가, 트렌드 식별 |
+| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | 사용자 피드백 분석, 인사이트 추출 | 피드백 분석, 사용자 인사이트, 제품 우선순위 |
+| 🧠 [Behavioral Nudge Engine](product/product-behavioral-nudge-engine.md) | 행동 심리학, 넛지 설계, 인게이지먼트 | 행동과학으로 사용자 동기 극대화 |
+| 🧭 [Product Manager](product/product-manager.md) | 전체 라이프사이클 제품 오너십 | 디스커버리, PRD, 로드맵 기획, GTM, 성과 측정 |
+
+### 🎬 프로젝트 관리 디비전
+
+열차가 제때, 예산 안에서 달리게 합니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎬 [Studio Producer](project-management/project-management-studio-producer.md) | 상위 수준 오케스트레이션, 포트폴리오 관리 | 다중 프로젝트 관리, 전략적 정렬, 리소스 배분 |
+| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md) | 직능 간 조율, 일정 관리 | 엔드투엔드 프로젝트 조율, 이해관계자 관리 |
+| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md) | 일상 업무 효율, 프로세스 최적화 | 운영 엑설런스, 팀 지원, 생산성 |
+| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B 테스트, 가설 검증 | 실험 관리, 데이터 기반 의사결정, 테스팅 |
+| 👔 [Senior Project Manager](project-management/project-manager-senior.md) | 현실적인 범위 설정, 태스크 전환 | 명세를 태스크로 변환, 스코프 관리 |
+| 📋 [Jira Workflow Steward](project-management/project-management-jira-workflow-steward.md) | Git 워크플로, 브랜치 전략, 추적성 | Jira와 연결된 Git 규율과 딜리버리 집행 |
+| 📋 [Meeting Notes Specialist](project-management/project-management-meeting-notes-specialist.md) | 구조화된 회의 요약 | 결정 사항, 액션 아이템, 미해결 질문 추출 |
+
+### 🧪 테스팅 디비전
+
+사용자가 겪지 않도록 먼저 깨뜨립니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 📸 [Evidence Collector](testing/testing-evidence-collector.md) | 스크린샷 기반 QA, 시각적 증거 | UI 테스트, 시각적 검증, 버그 문서화 |
+| 🔍 [Reality Checker](testing/testing-reality-checker.md) | 증거 기반 인증, 품질 게이트 | 프로덕션 준비도, 품질 승인, 릴리스 인증 |
+| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | 테스트 평가, 지표 분석 | 테스트 출력 분석, 품질 인사이트, 커버리지 리포팅 |
+| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | 성능 테스트, 최적화 | 속도 테스트, 부하 테스트, 성능 튜닝 |
+| 🔌 [API Tester](testing/testing-api-tester.md) | API 검증, 통합 테스트 | API 테스트, 엔드포인트 검증, 통합 QA |
+| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | 기술 평가, 도구 선정 | 도구 평가, 소프트웨어 추천, 기술 의사결정 |
+| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | 프로세스 분석, 워크플로 개선 | 프로세스 최적화, 효율 향상, 자동화 기회 발굴 |
+| ♿ [Accessibility Auditor](testing/testing-accessibility-auditor.md) | WCAG 감사, 보조 기술 테스트 | 접근성 준수, 스크린 리더 테스트, 인클루시브 디자인 검증 |
+| 🎭 [Test Automation Engineer](testing/testing-test-automation-engineer.md) | Playwright/Cypress E2E, 플레이키 테스트 제거, CI 병렬화 | 브라우저 테스트 스위트, 결정론적 파이프라인, 트레이스 기반 실패 디버깅 |
+
+### 🔒 보안 디비전
+
+시큐어 바이 디자인 아키텍처부터 침해 대응까지, 스택 전체를 방어합니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🛡️ [Security Architect](security/security-architect.md) | 위협 모델링, 시큐어 바이 디자인, 신뢰 경계 | 시스템 보안 모델, 아키텍처 리뷰, 다층 방어 |
+| 🔐 [Application Security Engineer](security/security-appsec-engineer.md) | SDLC 보안, SAST/DAST, 보안 코드 리뷰 | 개발 라이프사이클 보안, 코드 수준 취약점 |
+| 🗡️ [Penetration Tester](security/security-penetration-tester.md) | 허가된 모의 침투, 레드팀 작전, 공격 실행 | 공격자보다 먼저 악용 가능한 약점 찾기 |
+| ☁️ [Cloud Security Architect](security/security-cloud-security-architect.md) | 제로 트러스트, 클라우드 네이티브 다층 방어 | 클라우드 인프라와 아키텍처 보안 |
+| 🚨 [Incident Responder](security/security-incident-responder.md) | DFIR, 침해 조사, 위협 차단 | 진행 중인 침해, 포렌식, 위기 대응 |
+| 🔍 [Threat Intelligence Analyst](security/security-threat-intelligence-analyst.md) | 공격자 추적, 캠페인 맵핑, ATT&CK | 누가 어떻게 공격하는지 파악하기 |
+| 🎯 [Threat Detection Engineer](security/security-threat-detection-engineer.md) | SIEM 룰, 위협 헌팅, ATT&CK 맵핑 | 탐지 계층 구축과 위협 헌팅 |
+| 🛡️ [Senior SecOps Engineer](security/security-senior-secops.md) | 시크릿 스캐닝, 기본값으로 안전한 제출물 | 모든 변경에 적용되는 방어적 코드 수준 보안 |
+| 📋 [Compliance Auditor](security/security-compliance-auditor.md) | SOC 2, ISO 27001, HIPAA, PCI-DSS | 조직의 컴플라이언스 인증 획득 안내 |
+| 🛡️ [Blockchain Security Auditor](security/security-blockchain-security-auditor.md) | 스마트 컨트랙트 감사, 익스플로잇 분석 | 배포 전에 컨트랙트 취약점 찾기 |
+| 🔎 [AI-Generated Code Security Auditor](security/security-ai-generated-code-auditor.md) | AI/바이브 코딩 앱 보안 리뷰 | 하드코딩된 시크릿, 망가진 RLS, 프롬프트 인젝션 싱크 |
+| 🔑 [Secrets & Credential Hygiene Engineer](security/security-secrets-credential-engineer.md) | 시크릿·자격 증명 라이프사이클 | 탐지, 볼팅, 교체, 유출 대응 |
+
+### 🛟 서포트 디비전
+
+조직 운영의 근간입니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 💬 [Support Responder](support/support-support-responder.md) | 고객 응대, 이슈 해결 | 고객 지원, 사용자 경험, 서포트 운영 |
+| 📊 [Analytics Reporter](support/support-analytics-reporter.md) | 데이터 분석, 대시보드, 인사이트 | 비즈니스 인텔리전스, KPI 추적, 데이터 시각화 |
+| 💰 [Finance Tracker](support/support-finance-tracker.md) | 재무 계획, 예산 관리 | 재무 분석, 현금 흐름, 사업 성과 |
+| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | 시스템 신뢰성, 성능 최적화 | 인프라 관리, 시스템 운영, 모니터링 |
+| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | 컴플라이언스, 규제, 법무 검토 | 법규 준수, 규제 요건, 리스크 관리 |
+| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | 경영진 커뮤니케이션, 전략 요약 | 임원 보고, 전략 커뮤니케이션, 의사결정 지원 |
+
+### 🥽 공간 컴퓨팅 디비전
+
+몰입형 미래를 만듭니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md) | 공간 인터랙션 디자인, 몰입형 UX | AR/VR/XR 인터페이스 디자인, 공간 컴퓨팅 UX |
+| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md) | Swift, Metal, 고성능 3D | macOS 공간 컴퓨팅, Vision Pro 네이티브 앱 |
+| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md) | WebXR, 브라우저 기반 AR/VR | 브라우저 기반 몰입형 경험, WebXR 앱 |
+| 🎮 [XR Cockpit Interaction Specialist](spatial-computing/xr-cockpit-interaction-specialist.md) | 콕핏 기반 컨트롤, 몰입형 시스템 | 콕핏 제어 시스템, 몰입형 제어 인터페이스 |
+| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md) | Apple Vision Pro 개발 | Vision Pro 앱, 공간 컴퓨팅 경험 |
+| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md) | 터미널 통합, 커맨드라인 도구 | CLI 도구, 터미널 워크플로, 개발자 도구 |
+
+### 🎯 스페셜라이즈드 디비전
+
+틀에 들어가지 않는 독특한 전문가들입니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md) | 멀티 에이전트 조율, 워크플로 관리 | 여러 에이전트의 협업이 필요한 복잡한 프로젝트 |
+| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md) | Language Server Protocol, 코드 인텔리전스 | 코드 인텔리전스 시스템, LSP 구현, 시맨틱 인덱싱 |
+| 📥 [Sales Data Extraction Agent](specialized/sales-data-extraction-agent.md) | 엑셀 모니터링, 영업 지표 추출 | 영업 데이터 수집, MTD/YTD/연말 지표 |
+| 📈 [Data Consolidation Agent](specialized/data-consolidation-agent.md) | 영업 데이터 집계, 대시보드 리포트 | 지역별 요약, 담당자 성과, 파이프라인 스냅샷 |
+| 📬 [Report Distribution Agent](specialized/report-distribution-agent.md) | 자동 리포트 발송 | 지역 기반 리포트 배포, 예약 발송 |
+| 🔐 [Agentic Identity & Trust Architect](specialized/agentic-identity-trust.md) | 에이전트 신원, 인증, 신뢰 검증 | 멀티 에이전트 신원 시스템, 에이전트 인가, 감사 추적 |
+| 🔗 [Identity Graph Operator](specialized/identity-graph-operator.md) | 멀티 에이전트 시스템을 위한 공유 신원 해석 | 엔터티 중복 제거, 병합 제안, 에이전트 간 신원 일관성 |
+| 💸 [Accounts Payable Agent](specialized/accounts-payable-agent.md) | 지급 처리, 벤더 관리, 감사 | 암호화폐, 법정화폐, 스테이블코인 전반의 자율 지급 실행 |
+| 🌍 [Cultural Intelligence Strategist](specialized/specialized-cultural-intelligence-strategist.md) | 글로벌 UX, 대표성, 문화적 배제 | 소프트웨어가 여러 문화권에서 공감을 얻게 만들기 |
+| 🗣️ [Developer Advocate](specialized/specialized-developer-advocate.md) | 커뮤니티 구축, DX, 개발자 콘텐츠 | 제품과 개발자 커뮤니티를 잇기 |
+| 🔬 [Model QA Specialist](specialized/specialized-model-qa.md) | ML 감사, 피처 분석, 해석 가능성 | 머신러닝 모델의 엔드투엔드 QA |
+| 🗃️ [ZK Steward](specialized/zk-steward.md) | 지식 관리, 제텔카스텐, 노트 | 연결되고 검증된 지식 베이스 구축 |
+| 🔌 [MCP Builder](specialized/specialized-mcp-builder.md) | Model Context Protocol 서버, AI 에이전트 툴링 | AI 에이전트 역량을 확장하는 MCP 서버 구축 |
+| 📄 [Document Generator](specialized/specialized-document-generator.md) | 코드로 PDF, PPTX, DOCX, XLSX 생성 | 전문적인 문서 제작, 리포트, 데이터 시각화 |
+| ⚙️ [Automation Governance Architect](specialized/automation-governance-architect.md) | 자동화 거버넌스, n8n, 워크플로 감사 | 대규모 비즈니스 자동화 평가와 거버넌스 |
+| 📚 [Corporate Training Designer](specialized/corporate-training-designer.md) | 기업 교육, 커리큘럼 개발 | 교육 체계와 학습 프로그램 설계 |
+| 🌱 [Personal Growth Mentor](specialized/personal-growth-mentor.md) | 목표 명확화, 습관 시스템, 책임 관리, 인생 전략 | 자기계발 구호 없이 여러 영역을 아우르는 성장 지원 |
+| 🏛️ [Government Digital Presales Consultant](specialized/government-digital-presales-consultant.md) | 중국 ToG 프리세일즈, 디지털 전환 | 정부 디지털 전환 제안과 입찰 |
+| ⚕️ [Healthcare Marketing Compliance](specialized/healthcare-marketing-compliance.md) | 중국 의료 광고 규제 준수 | 헬스케어 마케팅 규제 컴플라이언스 |
+| 🎯 [Recruitment Specialist](specialized/recruitment-specialist.md) | 인재 확보, 리크루팅 운영 | 채용 전략, 소싱, 채용 프로세스 |
+| 🎓 [Study Abroad Advisor](specialized/study-abroad-advisor.md) | 국제 교육, 지원 계획 | 미국·영국·캐나다·호주 유학 계획 |
+| 🔗 [Supply Chain Strategist](specialized/supply-chain-strategist.md) | 공급망 관리, 조달 전략 | 공급망 최적화와 조달 기획 |
+| 🗺️ [Workflow Architect](specialized/specialized-workflow-architect.md) | 워크플로 발굴, 맵핑, 명세화 | 코드를 쓰기 전에 시스템의 모든 경로를 그려 두기 |
+| ☁️ [Salesforce Architect](specialized/specialized-salesforce-architect.md) | 멀티 클라우드 Salesforce 설계, 거버너 리밋, 연동 | 엔터프라이즈 Salesforce 아키텍처, 조직 전략, 배포 파이프라인 |
+| 🇫🇷 [French Consulting Market Navigator](specialized/specialized-french-consulting-market.md) | ESN/SI 생태계, 포르타주 살라리알, 단가 포지셔닝 | 프랑스 IT 시장에서의 프리랜스 컨설팅 |
+| 🇰🇷 [Korean Business Navigator](specialized/specialized-korean-business-navigator.md) | 한국 비즈니스 문화, 품의 프로세스, 관계의 작동 방식 | 한국 비즈니스 관계를 헤쳐 나가는 외국인 전문가 |
+| 🏗️ [Civil Engineer](specialized/specialized-civil-engineer.md) | 구조 해석, 지반 설계, 각국 건축 기준 | Eurocode, ACI, AISC 등 여러 표준을 아우르는 구조 엔지니어링 |
+| 🎧 [Customer Service](specialized/customer-service.md) | 옴니채널 지원, 불만 처리, 리텐션, 에스컬레이션 | 모든 업종의 고객 지원 — 리테일, SaaS, 호스피탈리티, 금융, 물류 |
+| 🏥 [Healthcare Customer Service](specialized/healthcare-customer-service.md) | HIPAA를 고려한 환자 지원, 수납, 보험, 응급 라우팅 | 규정을 준수하면서 공감하는 환자 지원이 필요한 의료 기관 |
+| 🏨 [Hospitality Guest Services](specialized/hospitality-guest-services.md) | 예약, 컨시어지, 불만 회복, 로열티, 이벤트 | 호텔, 리조트, 레스토랑, 이벤트 베뉴 |
+| 🤝 [HR Onboarding](specialized/hr-onboarding.md) | 입사 전 준비, 컴플라이언스, 복리후생 등록, 30-60-90일 계획 | 스타트업부터 대기업까지, 신규 입사자를 온보딩하는 모든 회사 |
+| 🌐 [Language Translator](specialized/language-translator.md) | 스페인어 ↔ 영어 번역, 방언 인식, 문화적 맥락 | 여행, 비즈니스, 의료, 법률 번역 수요 |
+| ⏱️ [Legal Billing & Time Tracking](specialized/legal-billing-time-tracking.md) | 시간 기록, 청구 내역 작성, IOLTA 준수, 수납 | 수익 회수와 청구 정확도를 극대화하는 법무법인 |
+| 📋 [Legal Client Intake](specialized/legal-client-intake.md) | 잠재 고객 검증, 이해충돌 심사, 상담 일정 조정 | 문의를 수임 고객으로 전환하는 법무법인 |
+| ⚖️ [Legal Document Review](specialized/legal-document-review.md) | 계약 검토, 리스크 표시, 버전 비교, 컴플라이언스 | 모든 업무 분야에서 변호사가 바로 쓸 수 있는 1차 검토 |
+| 🏦 [Loan Officer Assistant](specialized/loan-officer-assistant.md) | 차주 접수, TRID 준수, 파이프라인 추적, 클로징 조율 | 모기지 및 소비자 금융 팀 |
+| 🏠 [Real Estate Buyer & Seller](specialized/real-estate-buyer-seller.md) | 매수/매도 대리, 오퍼, 거래 조율 | 주거용 및 투자용 부동산 거래 |
+| 🛒 [Retail Customer Returns](specialized/retail-customer-returns.md) | 반품 처리, 사기 방지, 교환, 벤더 반품 | 오프라인, 이커머스, 옴니채널 리테일 |
+| ♟️ [Business Strategist](specialized/business-strategist.md) | 경영 컨설팅식 전략 | 경쟁 분석, 시장 진입, 성장 기획 |
+| 🔄 [Change Management Consultant](specialized/change-management-consultant.md) | ADKAR/Kotter/Prosci 변화 관리 | 조직의 전환과 정착 안내 |
+| 🧭 [Chief of Staff](specialized/specialized-chief-of-staff.md) | 경영진 업무 조율 | 노이즈 걸러내기, 프로세스 오너십, 의사결정 라우팅 |
+| 🌟 [Customer Success Manager](specialized/customer-success-manager.md) | 온보딩, 헬스 스코어, 리텐션 | QBR, 이탈 방지, 갱신과 확장 |
+| 📝 [Grant Writer](specialized/grant-writer.md) | 보조금 제안서와 자금 조달 | 비영리/연구 기관을 위한 LOI, 제안서, 예산 |
+| 🏥 [Medical Billing & Coding Specialist](specialized/medical-billing-coding-specialist.md) | ICD-10/CPT/HCPCS와 수익 사이클 | 청구, 거절 관리, RCM 최적화 |
+| 💰 [Pricing Analyst](specialized/specialized-pricing-analyst.md) | 가격 모델과 마진 최적화 | 경쟁사/원가 분석, 가치 기반 가격 책정 |
+| 💼 [Chief Financial Officer](specialized/chief-financial-officer.md) | 자본 배분과 재무 전략 | 자금 관리, FP&A, M&A 재무, 투자자·이사회 보고 |
+| 🌱 [ESG & Sustainability Officer](specialized/esg-sustainability-officer.md) | ESG 프로그램과 정보 공시 | 지속가능성 전략, 탈탄소화, 보고 |
+| 🔐 [Data Privacy Officer](specialized/data-privacy-officer.md) | GDPR/CCPA 프라이버시 컴플라이언스 | 데이터 매핑, DPIA, 동의, 침해 대응 |
+| ⚙️ [Operations Manager](specialized/operations-manager.md) | 린/식스 시그마 운영 | 프로세스 맵핑, 용량 계획, KPI 거버넌스 |
+| 🤝 [M&A Integration Manager](specialized/ma-integration-manager.md) | 인수 후 통합 | Day 1·100일 계획, 시너지 추적, TSA 관리 |
+| 🧠 [Organizational Psychologist](specialized/organizational-psychologist.md) | 팀 역학과 조직 문화 건강도 | 심리적 안전감, 번아웃 리스크, 고성과 팀 |
+| ⚔️ [Strategy Duel Agent](specialized/specialized-strategy-duel-agent.md) | 게임 이론과 36계 | 턴제 전략 대결, 적대적 시나리오 시뮬레이션 |
+| 🛡️ [FedRAMP & RMF Compliance Engineer](specialized/specialized-fedramp-rmf-compliance.md) | 미 연방 클라우드 승인(ATO) | NIST 800-53, FedRAMP Rev5/20x, SSP/POA&M, ConMon, OSCAL |
+| 🏺 [Codebase Archaeologist](specialized/specialized-codebase-archaeologist.md) | 멀티 도구 코드베이스 드리프트 감사 | Claude/Cursor/Copilot/Windsurf 편집 전반의 조용한 드리프트 탐지 |
+| 🧾 [Resume Tailor](specialized/resume-tailor.md) | 지원자 관점의 이력서 최적화 | JD 매핑, ATS 키워드 정렬, 경력과 요건 매칭 |
+| 🧡 [Aging Parent Care Companion](specialized/healthcare-aging-parent-care-companion.md) | 가족 간병인 의사결정 지원 | 진료·복약 조율, 케어팀 커뮤니케이션, 간병인 웰빙 (HIPAA 준수 지향) |
+| 🏛️ [Master Plan Architect](specialized/specialized-master-plan-architect.md) | 아키텍처 교육, 레드팀식 계획 비판 | 깊이 있는 아키텍처 교육, 리스크 비판, 종합적인 마크다운 구현 계획 (코드 실행 없음) |
+| 🎧 [Focus Music Architect](specialized/specialized-focus-music-architect.md) | 집중용 인스트루멘털 음악 프롬프트 엔지니어링, 뉴로어쿠스틱스 | 사운드스케이프 설계, BPM 커브, 생성형 오디오 모델용 바이노럴 레이어 |
+
+### 💵 파이낸스 디비전
+
+회계, 재무 분석, 세무 전략, 투자 리서치 전문가들입니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 📒 [Bookkeeper & Controller](finance/finance-bookkeeper-controller.md) | 월말 결산, 계정 대조, GAAP 준수, 내부 통제 | 일상 회계 업무, 감사 대비, 재무 기록 관리 |
+| 📊 [Financial Analyst](finance/finance-financial-analyst.md) | 재무 모델링, 예측, 시나리오 분석, 의사결정 지원 | 3표 연계 모델, 차이 분석, 데이터 기반 비즈니스 인텔리전스 |
+| 📈 [FP&A Analyst](finance/finance-fpa-analyst.md) | 예산 수립, 롤링 포캐스트, 차이 분석, 비즈니스 리뷰 | 연간 운영 계획, 월간 비즈니스 리뷰, 전략적 자원 배분 |
+| 🔍 [Investment Researcher](finance/finance-investment-researcher.md) | 실사, 포트폴리오 분석, 자산 평가, 주식 리서치 | 투자 논리 개발, 리스크 평가, 시장 조사 |
+| 🏛️ [Tax Strategist](finance/finance-tax-strategist.md) | 세무 최적화, 다국가 컴플라이언스, 이전가격 | 법인 구조 설계, ETR 분석, 세무조사 대응, 전략적 세무 기획 |
+
+### 🎮 게임 개발 디비전
+
+주요 엔진 전반에서 세계와 시스템, 경험을 만듭니다.
