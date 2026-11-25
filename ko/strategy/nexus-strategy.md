@@ -501,3 +501,199 @@ D+1 ~ D+7: 출시 후
 | 이해관계자 공유 완료 | 경영진 요약 전달 완료 | Executive Summary Generator 산출물 |
 
 **산출물**: 그로스 채널이 가동되는 안정적인 출시 제품 → Phase 6 활성화
+
+---
+
+## 9. Phase 6 — 운영 및 발전
+
+> **목표**: 지속적인 개선을 동반한 상시 운영입니다. 제품이 살아 움직이기 시작했습니다 — 이제 번창하게 만들 차례입니다.
+
+### 9.1 활성 에이전트 (상시)
+
+| 에이전트 | 주기 | 책임 |
+|-------|---------|---------------|
+| **Infrastructure Maintainer** | 상시 | 시스템 신뢰성, 가동률, 성능 |
+| **Support Responder** | 상시 | 고객 지원 및 이슈 해결 |
+| **Analytics Reporter** | 주간 | KPI 추적, 대시보드, 인사이트 |
+| **Feedback Synthesizer** | 격주 | 사용자 피드백 분석 및 종합 |
+| **Finance Tracker** | 월간 | 재무 성과, 예산 추적 |
+| **Legal Compliance Checker** | 월간 | 규제 모니터링 및 컴플라이언스 |
+| **Trend Researcher** | 월간 | 시장 정보 및 경쟁 분석 |
+| **Executive Summary Generator** | 월간 | 경영진 보고 |
+| **Sprint Prioritizer** | 스프린트마다 | 백로그 정리 및 스프린트 계획 |
+| **Experiment Tracker** | 실험마다 | A/B 테스트 관리 및 분석 |
+| **Growth Hacker** | 상시 | 유입 최적화 및 그로스 실험 |
+| **Workflow Optimizer** | 분기별 | 프로세스 개선 및 효율 향상 |
+
+### 9.2 지속적 개선 사이클
+
+```
+┌──────────────────────────────────────────────────────────┐
+│                  지속적 개선 루프                         │
+│                                                           │
+│  측정             분석              계획          실행    │
+│  ┌─────────┐     ┌──────────┐     ┌─────────┐   ┌─────┐ │
+│  │Analytics │────▶│Feedback  │────▶│Sprint   │──▶│구현 │ │
+│  │Reporter  │     │Synthesizer│    │Prioritizer│  │루프 │ │
+│  └─────────┘     └──────────┘     └─────────┘   └─────┘ │
+│       ▲                                            │      │
+│       │              Experiment                    │      │
+│       │              Tracker                       │      │
+│       └────────────────────────────────────────────┘      │
+│                                                           │
+│  월간: Executive Summary Generator → 경영진 리포트        │
+│  월간: Finance Tracker → 재무 성과                        │
+│  월간: Legal Compliance Checker → 규제 업데이트           │
+│  월간: Trend Researcher → 시장 정보                       │
+│  분기: Workflow Optimizer → 프로세스 개선                 │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 10. 에이전트 조율 매트릭스
+
+### 10.1 부문 간 전체 의존 관계 지도
+
+이 매트릭스는 어떤 에이전트의 산출물이 어떤 에이전트에게 소비되는지 보여줍니다. 읽는 방법: **행의 에이전트가 생산 → 열의 에이전트가 소비**.
+
+```
+생산자 →            │ ENG │ DES │ MKT │ PRD │ PM  │ TST │ SUP │ SPC │ SPZ
+────────────────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼────
+엔지니어링          │  ●  │     │     │     │     │  ●  │  ●  │  ●  │
+디자인              │  ●  │  ●  │  ●  │     │     │  ●  │     │  ●  │
+마케팅              │     │     │  ●  │  ●  │     │     │  ●  │     │
+제품                │  ●  │  ●  │  ●  │  ●  │  ●  │     │     │     │  ●
+프로젝트 관리       │  ●  │  ●  │  ●  │  ●  │  ●  │  ●  │  ●  │  ●  │  ●
+테스팅              │  ●  │  ●  │     │  ●  │  ●  │  ●  │     │  ●  │
+지원                │  ●  │     │  ●  │  ●  │  ●  │     │  ●  │     │  ●
+공간 컴퓨팅         │  ●  │  ●  │     │     │     │  ●  │     │  ●  │
+전문 분야           │  ●  │     │     │  ●  │  ●  │  ●  │  ●  │     │  ●
+
+● = 활성 의존 관계 (생산자가 만든 산출물을 이 부문이 소비함)
+```
+
+### 10.2 핵심 핸드오프 쌍
+
+NEXUS에서 가장 빈번하게 일어나는 핸드오프 관계입니다:
+
+| From | To | 산출물 | 빈도 |
+|------|----|----------|-----------|
+| Senior Project Manager | 전체 개발자 | 과업 목록 | 스프린트마다 |
+| UX Architect | Frontend Developer | CSS 디자인 시스템 + 레이아웃 명세 | 프로젝트마다 |
+| Backend Architect | Frontend Developer | API 명세 | 기능마다 |
+| Frontend Developer | Evidence Collector | 구현된 기능 | 과업마다 |
+| Evidence Collector | Agents Orchestrator | QA 판정 (PASS/FAIL) | 과업마다 |
+| Agents Orchestrator | 개발자 (전체) | QA 피드백 + 재시도 지침 | 실패마다 |
+| Brand Guardian | 전체 디자인 + 마케팅 | 브랜드 가이드라인 | 프로젝트마다 |
+| Analytics Reporter | Sprint Prioritizer | 성과 데이터 | 스프린트마다 |
+| Feedback Synthesizer | Sprint Prioritizer | 사용자 인사이트 | 스프린트마다 |
+| Trend Researcher | Studio Producer | 시장 정보 | 월간 |
+| Reality Checker | Agents Orchestrator | 통합 판정 | 단계마다 |
+| Executive Summary Generator | Studio Producer | 경영진 브리프 | 마일스톤마다 |
+
+---
+
+## 11. 핸드오프 프로토콜
+
+### 11.1 표준 핸드오프 템플릿
+
+에이전트 간 모든 핸드오프에는 다음이 포함되어야 합니다:
+
+```markdown
+## NEXUS 핸드오프 문서
+
+### 메타데이터
+- **From**: [Agent Name] ([Division])
+- **To**: [Agent Name] ([Division])
+- **단계**: [Current NEXUS Phase]
+- **과업 참조**: [Task ID from Sprint Prioritizer backlog]
+- **우선순위**: [Critical / High / Medium / Low]
+- **타임스탬프**: [ISO 8601]
+
+### 컨텍스트
+- **프로젝트**: [Project name and brief description]
+- **현재 상태**: [What has been completed so far]
+- **관련 파일**: [List of files/artifacts to review]
+- **의존 관계**: [What this work depends on]
+
+### 산출물 요청
+- **필요한 것**: [Specific, measurable deliverable]
+- **완료 기준**: [How success will be measured]
+- **제약 조건**: [Technical, timeline, or resource constraints]
+- **참고 자료**: [Links to specs, designs, previous work]
+
+### 품질 기대치
+- **반드시 통과해야 할 것**: [Specific quality criteria]
+- **필요한 증거**: [What proof of completion looks like]
+- **다음 핸드오프 대상**: [Who receives the output and what they need]
+```
+
+### 11.2 QA 피드백 루프 프로토콜
+
+과업이 QA에서 실패하면, 피드백은 바로 실행할 수 있는 형태여야 합니다:
+
+```markdown
+## QA 실패 피드백
+
+### 과업: [Task ID and description]
+### 시도: 최대 3회 중 [1/2/3]회차
+### 판정: FAIL
+
+### 발견된 구체적 문제
+1. **[Issue Category]**: [스크린샷 참조와 함께 정확한 설명]
+   - 기대 동작: [What should happen]
+   - 실제 동작: [What actually happens]
+   - 증거: [Screenshot filename or test output]
+
+2. **[Issue Category]**: [정확한 설명]
+   - 기대 동작: [...]
+   - 실제 동작: [...]
+   - 증거: [...]
+
+### 수정 지침
+- [구체적이고 실행 가능한 수정 지침 1]
+- [구체적이고 실행 가능한 수정 지침 2]
+
+### 수정할 파일
+- [file path 1]: [무엇을 바꿔야 하는가]
+- [file path 2]: [무엇을 바꿔야 하는가]
+
+### 재시도 기대사항
+- 위 문제를 수정하고 QA에 다시 제출하세요
+- 새 기능을 추가하지 마세요 — 수정만 하세요
+- 최대 3회 중 [N+1]회차 시도
+```
+
+### 11.3 에스컬레이션 프로토콜
+
+과업이 재시도 3회를 초과한 경우:
+
+```markdown
+## 에스컬레이션 리포트
+
+### 과업: [Task ID]
+### 소진된 시도: 3/3
+### 에스컬레이션 레벨: [To Agents Orchestrator / To Studio Producer]
+
+### 실패 이력
+- 1회차: [문제와 시도한 수정 요약]
+- 2회차: [문제와 시도한 수정 요약]
+- 3회차: [문제와 시도한 수정 요약]
+
+### 근본 원인 분석
+- [과업이 계속 실패하는 이유]
+- [해결을 막고 있는 구조적 문제]
+
+### 권장 해결 방안
+- [ ] 다른 개발 에이전트에게 재배정
+- [ ] 과업을 더 작은 하위 과업으로 분해
+- [ ] 아키텍처/접근 방식 수정
+- [ ] 알려진 한계를 감수하고 현 상태 수용
+- [ ] 향후 스프린트로 연기
+
+### 영향 평가
+- **블로킹**: [What other tasks are blocked by this]
+- **일정 영향**: [How this affects the overall schedule]
+- **품질 영향**: [감수해야 할 품질 타협]
+```

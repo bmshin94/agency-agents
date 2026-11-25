@@ -440,3 +440,113 @@ CRM 잡무가 아니라 실력으로 파이프라인을 매출로 바꿉니다.
 ### 🎮 게임 개발 디비전
 
 주요 엔진 전반에서 세계와 시스템, 경험을 만듭니다.
+
+#### 엔진 공통 에이전트 (엔진 무관)
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🎯 [Game Designer](game-development/game-designer.md) | 시스템 설계, GDD 작성, 경제 밸런싱, 게임플레이 루프 | 게임 메커닉과 성장 시스템 설계, 디자인 문서 작성 |
+| 🗺️ [Level Designer](game-development/level-designer.md) | 레이아웃 이론, 페이싱, 인카운터 설계, 환경 스토리텔링 | 레벨 제작, 인카운터 흐름 설계, 공간 내러티브 |
+| 🎨 [Technical Artist](game-development/technical-artist.md) | 셰이더, VFX, LOD 파이프라인, 아트→엔진 최적화 | 아트와 엔지니어링 잇기, 셰이더 작성, 성능 안전한 에셋 파이프라인 |
+| 🔊 [Game Audio Engineer](game-development/game-audio-engineer.md) | FMOD/Wwise, 적응형 음악, 공간 음향, 오디오 예산 | 인터랙티브 오디오 시스템, 동적 음악, 오디오 성능 |
+| 📖 [Narrative Designer](game-development/narrative-designer.md) | 스토리 시스템, 분기 대화, 로어 아키텍처 | 분기 내러티브 작성, 대화 시스템 구현, 세계관 로어 |
+| 💰 [Economy Designer](game-development/economy-designer.md) | 가상 화폐, 소스/싱크, 수익화 모델링, 인플레이션 통제 | 인게임 경제 설계, F2P 수익화 밸런싱, 라이브 경제 튜닝 |
+
+#### Unity
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🏗️ [Unity Architect](game-development/unity/unity-architect.md) | ScriptableObject, 데이터 주도 모듈화, DOTS/ECS | 대규모 Unity 프로젝트, 데이터 주도 시스템 설계, ECS 성능 작업 |
+| ✨ [Unity Shader Graph Artist](game-development/unity/unity-shader-graph-artist.md) | Shader Graph, HLSL, URP/HDRP, Renderer Feature | 커스텀 Unity 머티리얼, VFX 셰이더, 포스트 프로세싱 패스 |
+| 🌐 [Unity Multiplayer Engineer](game-development/unity/unity-multiplayer-engineer.md) | Netcode for GameObjects, Unity Relay/Lobby, 서버 권한, 예측 | 온라인 Unity 게임, 클라이언트 예측, Unity Gaming Services 연동 |
+| 🛠️ [Unity Editor Tool Developer](game-development/unity/unity-editor-tool-developer.md) | EditorWindow, AssetPostprocessor, PropertyDrawer, 빌드 검증 | 커스텀 Unity 에디터 툴링, 파이프라인 자동화, 콘텐츠 검증 |
+
+#### Unreal Engine
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| ⚙️ [Unreal Systems Engineer](game-development/unreal-engine/unreal-systems-engineer.md) | C++/블루프린트 혼용, GAS, Nanite 제약, 메모리 관리 | 복잡한 Unreal 게임플레이 시스템, Gameplay Ability System, 엔진 수준 C++ |
+| 🎨 [Unreal Technical Artist](game-development/unreal-engine/unreal-technical-artist.md) | Material Editor, Niagara, PCG, Substrate | Unreal 머티리얼, Niagara VFX, 절차적 콘텐츠 생성 |
+| 🌐 [Unreal Multiplayer Architect](game-development/unreal-engine/unreal-multiplayer-architect.md) | 액터 리플리케이션, GameMode/GameState 계층, 데디케이티드 서버 | Unreal 온라인 게임, 리플리케이션 그래프, 서버 권한 기반 Unreal |
+| 🗺️ [Unreal World Builder](game-development/unreal-engine/unreal-world-builder.md) | World Partition, 랜드스케이프, HLOD, LWC | 대규모 오픈월드 Unreal 레벨, 스트리밍 시스템, 대규모 지형 |
+
+#### Godot
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 📜 [Godot Gameplay Scripter](game-development/godot/godot-gameplay-scripter.md) | GDScript 2.0, 시그널, 컴포지션, 정적 타이핑 | Godot 게임플레이 시스템, 씬 컴포지션, 성능을 고려한 GDScript |
+| 🌐 [Godot Multiplayer Engineer](game-development/godot/godot-multiplayer-engineer.md) | MultiplayerAPI, ENet/WebRTC, RPC, 권한 모델 | 온라인 Godot 게임, 씬 리플리케이션, 서버 권한 기반 Godot |
+| ✨ [Godot Shader Developer](game-development/godot/godot-shader-developer.md) | Godot 셰이딩 언어, VisualShader, RenderingDevice | 커스텀 Godot 머티리얼, 2D/3D 이펙트, 포스트 프로세싱, 컴퓨트 셰이더 |
+
+#### Blender
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🧩 [Blender Addon Engineer](game-development/blender/blender-addon-engineer.md) | Blender Python(`bpy`), 커스텀 오퍼레이터/패널, 에셋 검증기, 익스포터, 파이프라인 자동화 | Blender 애드온 제작, 에셋 준비 도구, 익스포트 워크플로, DCC 파이프라인 자동화 |
+
+#### Roblox Studio
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| ⚙️ [Roblox Systems Scripter](game-development/roblox-studio/roblox-systems-scripter.md) | Luau, RemoteEvent/Function, DataStore, 서버 권한 모듈 아키텍처 | 안전한 Roblox 게임 시스템 구축, 클라이언트-서버 통신, 데이터 영속성 |
+| 🎯 [Roblox Experience Designer](game-development/roblox-studio/roblox-experience-designer.md) | 인게이지먼트 루프, 수익화, D1/D7 리텐션, 온보딩 플로 | Roblox 게임 루프, 게임 패스, 일일 보상, 플레이어 리텐션 설계 |
+| 👗 [Roblox Avatar Creator](game-development/roblox-studio/roblox-avatar-creator.md) | UGC 파이프라인, 액세서리 리깅, Creator Marketplace 등록 | Roblox UGC 아이템, HumanoidDescription 커스터마이징, 경험 내 아바타 숍 |
+
+### 📚 아카데믹 디비전
+
+세계관 구축, 스토리텔링, 내러티브 설계에 학술적 엄밀함을 더합니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🌍 [Anthropologist](academic/academic-anthropologist.md) | 문화 체계, 친족 관계, 의례, 신앙 체계 | 내적 논리를 갖춘, 문화적으로 일관된 사회 설계 |
+| 🌐 [Geographer](academic/academic-geographer.md) | 자연·인문 지리, 기후, 지도학 | 현실적인 지형과 정착지를 갖춘 지리적으로 일관된 세계 구축 |
+| 📚 [Historian](academic/academic-historian.md) | 역사 분석, 시대 구분, 물질 문화 | 역사적 일관성 검증, 시대에 맞는 진짜 디테일로 배경 풍부하게 하기 |
+| 📜 [Narratologist](academic/academic-narratologist.md) | 서사 이론, 이야기 구조, 캐릭터 아크 | 정립된 이론적 틀로 이야기 구조 분석·개선 |
+| 🧠 [Psychologist](academic/academic-psychologist.md) | 성격 이론, 동기, 인지 패턴 | 연구에 기반한 심리적으로 설득력 있는 캐릭터 구축 |
+| 📊 [Statistician](academic/academic-statistician.md) | 통계적 추론과 실험 설계 | 가설 검정, 인과 추론, 표본 설계, 엄밀한 분석 |
+
+---
+
+### 🌍 GIS 디비전
+
+지구를 지도로 옮기고, 건설된 세계를 분석하고, 지리공간 데이터에서 인텔리전스를 뽑아냅니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🧠 [Technical Consultant](gis/gis-technical-consultant.md) | GIS 전략, 격차 분석, 기술 로드맵, 디지털 전환 | 비즈니스 요구 파악, 적합한 지리공간 스택 선정, 다단계 GIS 프로그램 기획 |
+| 🔧 [Solution Engineer](gis/gis-solution-engineer.md) | Esri + FOSS4G 프로토타입 제작, PoC 전달, 기술 타당성 | 동작하는 데모 제작, 기술 접근 검증, 프리세일즈 지원 |
+| 🖥️ [GIS Analyst](gis/gis-analyst.md) | 지도 제작, 데이터 QC, 심볼로지, 레이아웃, 공간 질의 | 일상적인 GIS 업무, 발행 가능한 품질의 지도 제작, 데이터 정합성 유지 |
+| 📦 [Spatial Data Engineer](gis/gis-spatial-data-engineer.md) | 지리공간 ETL, 포맷 변환, CRS 재투영, 자동화 파이프라인 | 출처가 다양한 지저분한 데이터 수집, 반복 가능한 데이터 변환 파이프라인 구축 |
+| ⚙️ [Geoprocessing Specialist](gis/gis-geoprocessing-specialist.md) | ArcPy, Python Toolbox(.pyt), Model Builder, 배치 자동화 | 반복적인 GIS 워크플로 자동화, 커스텀 지오프로세싱 도구 제작 |
+| ✅ [GIS QA Engineer](gis/gis-qa-engineer.md) | 토폴로지 검증, 메타데이터 감사, CRS 일관성, 정확도 평가 | 데이터 발행 전 품질 게이트, 규정 준수 확인, 데이터 정합성 감사 |
+| 🤖 [GeoAI/ML Engineer](gis/gis-geoai-ml-engineer.md) | 피처 추출, 객체 탐지, 시맨틱 분할, 토지 피복 분류 | 영상에서 건물/도로/차량 추출, 변화 탐지, 환경 모니터링 |
+| 🏗️ [BIM/GIS Specialist](gis/gis-bim-specialist.md) | Revit/IFC → GIS, 실내 매핑, 디지털 트윈 아키텍처, 시설 관리 | 스마트 캠퍼스, 공항 디지털 트윈, 실내 내비게이션, 건물 운영 |
+| 🏔️ [3D & Scene Developer](gis/gis-3d-scene-developer.md) | Cesium, ArcGIS Scene Viewer, 3D Tiles, 포인트 클라우드, 지형 시각화 | 3D 도시 씬, 지형 플라이오버, 포인트 클라우드 웹 뷰어, OAuth로 보호된 씬 공유 |
+| 📊 [Spatial Data Scientist](gis/gis-spatial-data-scientist.md) | 공간 통계, 클러스터링, 회귀, 보간, 점 패턴 분석 | 핫스팟 탐지, 공간 모델링, 예측 분석, 연구 수준의 분석 |
+| 🛸 [Drone/Reality Mapping](gis/gis-drone-reality-mapping.md) | 사진측량, 정사영상, DTM/DSM, 포인트 클라우드 분류, 3D 메시 | 드론 측량 처리, 리얼리티 캡처, 건설 현장 모니터링, 환경 매핑 |
+| 🌐 [Web GIS Developer](gis/gis-web-gis-developer.md) | MapLibre GL JS, ArcGIS JS API, Leaflet, 실시간 대시보드, REST API | 인터랙티브 웹 지도, 운영 대시보드, 실시간 데이터 시각화 구축 |
+| 🎨 [Cartography Designer](gis/gis-cartography-designer.md) | 색채 이론, 타이포그래피, 베이스맵 디자인, 시각적 위계, 인쇄·웹 미감 | 아름답고 읽기 쉬운 지도, 색각 이상 안전 팔레트, 전문적인 지도 레이아웃 |
+
+---
+
+### 🏥 헬스케어 디비전
+
+규제가 적용되는 임상 환경과 국가 주도 보건 맥락을 위한 AI 에이전트를 만듭니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🩺 [Clinical Evidence Agent](healthcare/healthcare-clinical-evidence-agent.md) | 근거 기준, 검증된 주장과 검증되지 않은 주장, 진단 권한의 경계 | 진단 권한을 넘지 않으면서 임상적 주장을 신뢰성 있게 제시하기 |
+| 🌍 [Sovereign Health Systems Agent](healthcare/healthcare-sovereign-health-systems-agent.md) | 정부 보건 정책 의무, UHC 정책, 신흥시장 도입 | 국가 보건 인프라와 주권적 보건 정책이 교차하는 지점에서 일하는 헬스테크 팀 |
+| 🧭 [Healthcare Innovation Strategist](healthcare/healthcare-innovation-strategist.md) | 투자자·규제기관·정부·임상 청중을 아우르는 헬스케어 창업자용 내러티브 설계 | 임상적·재무적 복잡성을 자본을 움직이고 신뢰를 쌓는 언어로 번역해야 하는 헬스케어 창업자 |
+
+---
+
+### 🔍 리서치 디비전
+
+새로운 1차 데이터를 만들기보다, 기존 근거를 찾아 평가하고 종합합니다.
+
+| 에이전트 | 전문 분야 | 사용 시점 |
+|-------|-----------|-------------|
+| 🔍 [Research Synthesist](research/research-synthesist.md) | 문헌 검토, 출처 평가, 인용 추적, 근거 종합 | 흩어진 자료 더미를 근거가 뒷받침하는 바에 대한 구조적이고 정직하게 가중된 지도로 바꾸기 |
+
+---
