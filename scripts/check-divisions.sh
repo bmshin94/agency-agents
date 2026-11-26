@@ -27,9 +27,11 @@ JSON="divisions.json"
 # caught even if nobody remembered to register it).
 # integrations/ is convert.sh's OUTPUT tree (per-tool conversions written back
 # into the repo), not a source-agent category. strategy/ holds playbooks and
-# runbooks (no agent frontmatter), not agents. Neither is a division — they must
-# never be scanned as source-agent categories.
-NON_DIVISION_DIRS=(examples scripts integrations strategy)
+# runbooks (no agent frontmatter), not agents. ko/ is a read-only Korean
+# translation mirror of the English corpus — convert.sh and lint-agents.sh never
+# scan it, so it must not be treated as a division either. None of these are
+# divisions — they must never be scanned as source-agent categories.
+NON_DIVISION_DIRS=(examples scripts integrations strategy ko)
 
 errors=0
 fail() { echo "ERROR $*"; errors=$((errors + 1)); }
